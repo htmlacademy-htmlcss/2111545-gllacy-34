@@ -71,15 +71,25 @@
             </header>
 
             <section class="catalog-products">
-                <h2 class="visually-hidden">Список товаров с фильтрами</h2>
-                <select class="select-control" aria-label="Сортировка">
-                    <option value="popular">По популярности</option>
-                    <option value="cheap">Сначала дешёвое</option>
-                    <option value="expensive">Сначала дорогое</option>
-                </select>
-
+                
                 <form class="catalog-filter" action="#" method="get">
+                    <h2 class="visually-hidden">Список товаров с фильтрами</h2>
 
+                    <!--Форма сортировки-->
+                    <fieldset class="catalog-filter-group">
+                        <legend class="catalog-filter-title">Сортировка</legend>
+                        <select class="select-control" aria-label="Сортировка">
+                            <option value="popular">По популярности</option>
+                            <option value="cheap">Сначала дешёвое</option>
+                            <option value="expensive">Сначала дорогое</option>
+                        </select>
+                    </fieldset>
+
+                    <!--Начало формы цены-->
+
+                    <!--Конец формы цены-->
+
+                    <!--Форма жирности-->
                     <fieldset class="catalog-filter-group">
                         <legend class="catalog-filter-title">Жирность</legend>
                         <ul class="catalog-filter-list">
@@ -110,6 +120,7 @@
                         </ul>
                     </fieldset>
 
+                    <!--Форма наполнителей-->
                     <fieldset class="catalog-filter-group">
                         <legend class="catalog-filter-title">Наполнители</legend>
                         <ul class="catalog-filter-list">
@@ -148,8 +159,8 @@
 
                     <button class="button light-pink" type="submit">Применить</button>
                 </form>
-                <!--ТТТТУУУУУУУУУУТТТТТТ-->
 
+                <!--Список товаров-->
                 <ul class="product-list">
                     <li class="product-card">
                         <span class="product-card-white-background">
@@ -173,6 +184,7 @@
                 
                 <button class="button pagination-show-more" type="button">Показать ещё</button>
 
+                <!--Постраничная навигация-->
                 <ul class="pagination">
                     <li class="pagination-item">
                         <a class="pagination-link pagination-prev pagination-disabled">
