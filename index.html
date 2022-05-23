@@ -105,13 +105,13 @@
         </ul>
 
         <!--Стрелочки для перемещения по слайдам-->
-        <ul class="navigation-buttom-list">
-          <li class="navigation-buttom-item">
+        <ul class="navigation-button-list">
+          <li class="navigation-button-item">
             <button class="navigation-button" type="button">
               <span class="visually-hidden">Предыдущее мороженое.</span>
             </button>
           </li>
-          <li class="navigation-buttom-item">
+          <li class="navigation-button-item">
             <button class="navigation-button" type="button">
               <span class="visually-hidden">Следующее мороженое.</span>
             </button>
@@ -139,21 +139,21 @@
 
         <ul class="social-list">
           <li class="social-item">
-            <a class="social-buttom telegram" href="https://t.me/htmlacademy">
+            <a class="social-link telegram" href="https://t.me/htmlacademy">
               <span class="visually-hidden">
                 Телеграм.
               </span>
             </a>
           </li>
           <li>
-            <a class="social-buttom vk" href="https://vk.com/htmlacademy">
+            <a class="social-link vk" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">
                 Вконтакте.
               </span>
             </a>
           </li>
           <li>
-            <a class="social-buttom youtube" href="https://www.youtube.com/user/htmlacademyru ">
+            <a class="social-link youtube" href="https://www.youtube.com/user/htmlacademyru ">
               <span class="visually-hidden">
                 Ютуб.
               </span>
@@ -183,7 +183,7 @@
         </ul>
       </section>
 
-      <!--Блок с популрным мороженым-->
+      <!--Блок с популярным мороженым-->
       <section class="popular-product">
         <h2 class="popular-product-title">Попробуйте самые популярные вкусы нашего мороженого</h2>
 
@@ -298,7 +298,9 @@
 
         <form class="subscription-form" action="#" method="post">
           <p class="subscription-description">
-            <label class="visually-hidden" for="newsletter-email">Email</label>
+            <label class="subscription-email" for="subscription-email">
+              <span class="visually-hidden">Email.</span>
+            </label>
             <input class="field" placeholder="email@example.com" type="email" name="subscription-email" id="subscription-email" required>
           </p>
           <button class="button pink" type="submit">Отправить</button>
@@ -359,14 +361,20 @@
       <section class="footer-social">
         <h3 class="visually-hidden">Мы в социальныхх сетях.</h3>
         <ul class="footer-social-list">
-          <li class="footer-social-item telegram">
-            <span class="visually-hidden">Телеграм.</span>
+          <li class="footer-social-item">
+            <a class="footer-social-link telegram" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Телеграм.</span>
+            </a>
           </li>
           <li class="footer-social-item vk">
-            <span class="visually-hidden">Вконтакте.</span>
+            <a class="footer-social-link vk" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">Вконтакте.</span>
+            </a>
           </li>
           <li class="footer-social-item youtube">
-            <span class="visually-hidden">Ютуб.</span>
+            <a class="footer-social-link youtube" href="https://www.youtube.com/user/htmlacademyru ">
+              <span class="visually-hidden">Ютуб.</span>
+            </a>
           </li>
         </ul>
       </section>
