@@ -151,6 +151,7 @@ page-header {
     color: #2D3440;
     background-color: #ffffff;
     background-image: url("../images/index/background-news.jpg");
+    background-size: 100% auto;
     width: 570px;
     height: 224px;
 }
@@ -159,6 +160,7 @@ page-header {
     color: #2D3440;
     background-color: #ffffff;
     background-image: url("../images/index/background-delivery.jpg");
+    background-size: 100% auto;
     width: 1170px;
     height: 534px;
 }
@@ -193,6 +195,7 @@ page-header {
     color: #2D3440;
     background-color: #ffffff;
     background-image: url("../images/index/background-feedback.jpg");
+    background-size: 100% auto;
     width: 1170px;
     height: 492px;
 }
@@ -205,6 +208,7 @@ page-header {
     color: #2D3440;
     font-weight: 700;
     font-size: 20px;
+    font-style: normal;
     line-height: 24px;
 }
 
@@ -236,17 +240,7 @@ page-header {
     color: #2D3440;
 }
 
-.for-suppliers-documents {
-    text-decoration: none;
-    color: #2D3440;
-}
-
-.for-suppliers-about-production {
-    color: #2D3440;
-    text-decoration: none;
-}
-
-.eco-standards {
+.for-suppliers-link a {
     text-decoration: none;
     color: #2D3440;
 }
