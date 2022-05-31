@@ -1,0 +1,308 @@
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    src: url("fonts/inter-400.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Inter";
+    font-weight: 700;
+    src: url("fonts/inter-700.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Inter";
+    font-weight: 900;
+    src: url("fonts/inter-900.woff2") format("woff2");
+    font-display: swap;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    background-color: #FEAFC3;
+    color: #2D3440;
+}
+
+page-header {
+    line-height: 20px;
+    color: #2D3440;
+    background-color: #FEAFC3;
+}
+
+.navigation-link {
+    color: inherit; /*Наследование от page-header*/
+    text-decoration: none; /*Убирает подчёркивание*/
+}
+
+.contacts-phone {
+    color: inherit; /*Наследование от page-header*/
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.navigation-user-link{
+    color: inherit; /*Наследование от page-header*/
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.slider-ice-cream-title {
+    line-height: 46px;
+    font-size: 36px;
+    font-weight: 900;
+    color: #2D3440;
+}
+
+.slider-ice-cream-description{
+    line-height: 24px;
+    font-size: 18px;
+    color: #2D3440;
+}
+
+.present-title {
+    line-height: 46px;
+    font-size: 32px;
+    font-weight: 900;
+    color: #2D3440;
+    text-align: center;
+}
+
+.present-title-description {
+    line-height: 30px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #2D3440;
+}
+
+.present-description {
+    color: #2D3440;
+}
+
+.popular-product-title {
+    line-height: 46px;
+    font-size: 32px;
+    font-weight: 900;
+    color: #2D3440;
+    text-align: center;
+}
+
+.product-card-link {
+    text-decoration: none;
+}
+
+.product-card-title {
+    line-height: 24px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #2D3440;
+    text-align: center;
+}
+
+.product-card-description {
+    color: #565C66;
+    text-align: center;     
+}
+
+.product-card-price {
+    line-height: 24px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #2D3440;
+}
+
+.about-magazine-title {
+    line-height: 46px;
+    font-size: 32px;
+    font-weight: 900;
+    color: #2D3440;
+    text-align: center;
+}
+
+.about-magazine-description {
+    color: #565C66;
+}
+
+.news-description {
+    line-height: 20px;
+    color: #565C66;
+}
+
+.news-link {
+    text-decoration: none;
+}
+
+.news-title {
+    line-height: 30px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #2D3440;
+}
+
+.subscription-info {
+    color: #565C66;
+}
+
+.news {
+    color: #2D3440;
+    background-color: #ffffff;
+    background-image: url("../images/index/background-news.jpg");
+    width: 570px;
+    height: 224px;
+}
+
+.delivery {
+    color: #2D3440;
+    background-color: #ffffff;
+    background-image: url("../images/index/background-delivery.jpg");
+    width: 1170px;
+    height: 534px;
+}
+
+.delivery-title {
+    color: #2D3440;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 46px;
+}
+
+.delivery-description {
+    color: #565C66;
+}
+
+.delivery-form-description {
+    color: #565C66;
+}
+
+.delivery-label {
+    color: #2D3440;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.delivery-input {
+    color: #B9B9B9;
+    line-height: 20px;
+}
+
+.magazine-info {
+    color: #2D3440;
+    background-color: #ffffff;
+    background-image: url("../images/index/background-feedback.jpg");
+    width: 1170px;
+    height: 492px;
+}
+
+.address-description {
+    color: #565C66;
+}
+
+.magazine-address {
+    color: #2D3440;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.order-description {
+    color: #565C66;
+}
+
+.magazine-info-contacts-phone {
+    text-decoration: none;
+    color: #2D3440;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.order-time {
+    color: #565C66;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.for-suppliers {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.for-suppliers-description {
+    font-weight: 700;
+    color: #2D3440;
+}
+
+.for-suppliers-documents {
+    text-decoration: none;
+    color: #2D3440;
+}
+
+.for-suppliers-about-production {
+    color: #2D3440;
+    text-decoration: none;
+}
+
+.eco-standards {
+    text-decoration: none;
+    color: #2D3440;
+}
+
+.footer-developers-description {
+    font-size: 12px;
+    line-height: 16px;
+    color: #2D3440;
+}
+
+.footer-developers-link {
+    color: #2D3440;
+}
+
+/* Каталог */
+
+.breadcrumbs-link {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #2D3440;
+}
+
+.breadcrumbs-link.active {
+    text-decoration: underline;
+    color: #2D3440;
+}
+
+.inner-header-title {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 46px;
+    color: #2D3440;
+}
+
+.catalog-filter-title {
+    font-size: 14px;
+    line-height: 20px;
+    color: #2D3440;
+}
+
+.select-control {
+    font-size: 14px;
+    line-height: 20px;
+    color: #2D3440;
+}
+
+.catalog-filter-item {
+    font-size: 14px;
+    line-height: 20px;
+    color: #2D3440;
+}
+
+.pagination-link {
+    text-decoration: none;
+    line-height: 20px;
+    color: #2D3440;
+}
