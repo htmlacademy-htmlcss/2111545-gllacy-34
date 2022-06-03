@@ -1,0 +1,420 @@
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/inter-400.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Inter";
+    font-weight: 700;
+    src: url("../fonts/inter-700.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Inter";
+    font-weight: 900;
+    src: url("../fonts/inter-900.woff2") format("woff2");
+    font-display: swap;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    background-color: #FEAFC3;
+    color: #2D3440;
+}
+
+.button {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+page-header {
+    line-height: 20px;
+    color: #2D3440;
+    background-color: #FEAFC3;
+}
+
+.navigation-link {
+    color: inherit; /*Наследование от page-header*/
+    text-decoration: none; /*Убирает подчёркивание*/
+}
+
+.navigation-link.active {
+    color: #FCFCFC;
+    background: #FF4A78;
+    border-radius: 30px;
+}
+
+.navigation-user-item {
+    background: rgba(252, 252, 252, 0.3);
+    border-radius: 30px;
+}
+
+.contacts-phone {
+    color: inherit; /*Наследование от page-header*/
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.navigation-user-link{
+    color: inherit; /*Наследование от page-header*/
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.slider-ice-cream-title {
+    line-height: 46px;
+    font-size: 36px;
+    font-weight: 900;
+    color: #2D3440;
+}
+
+.slider-ice-cream-description{
+    line-height: 24px;
+    font-size: 18px;
+    color: #2D3440;
+}
+
+.button-delivery {
+    text-align: center;
+    color: #2D3440;
+    text-decoration: none;
+    background-color: #FCFCFC;
+    border-radius: 26px;
+    border: 4px solid rgba(252, 252, 252, 0.4);
+    box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
+    background-clip: padding-box;
+}
+
+.present-list-item {
+    background: #FF7799;
+    border-radius: 16px;
+}
+
+.present-title {
+    line-height: 46px;
+    font-size: 32px;
+    font-weight: 900;
+    color: #2D3440;
+    text-align: center;
+}
+
+.present-title-description {
+    line-height: 30px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #2D3440;
+}
+
+.present-description {
+    color: #2D3440;
+}
+
+.button-white-present {
+    text-align: center;
+    color: #2D3440;
+    text-decoration: none;
+    background: #FCFCFC;
+    border: 4px solid rgba(252, 252, 252, 0.4);
+    box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
+    border-radius: 26px;
+    background-clip: padding-box;
+}
+
+.popular-product-title {
+    line-height: 46px;
+    font-size: 32px;
+    font-weight: 900;
+    color: #2D3440;
+    text-align: center;
+}
+
+.product-card {
+    background: #FCFCFC;
+    border-radius: 8px;
+}
+
+.product-card-link {
+    text-decoration: none;
+}
+
+.product-card-title {
+    line-height: 24px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #2D3440;
+    text-align: center;
+}
+
+.product-card-description {
+    color: #565C66;
+    text-align: center;     
+}
+
+.product-card-price {
+    line-height: 24px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #2D3440;
+}
+
+.button-add-bascet {
+    background: #FF2F64;
+    border-radius: 26px;
+}
+
+.about-magazine {
+    background-color: #ffffff;
+    background-image: url("../images/index/background-about-magazine.jpg");
+    background-size: 100% auto;
+    border-radius: 16px;
+}
+
+.about-magazine-info {
+    background: #FFFFFF;
+    border-radius: 16px;
+}
+
+.about-magazine-title {
+    line-height: 46px;
+    font-size: 32px;
+    font-weight: 900;
+    color: #2D3440;
+    text-align: center;
+}
+
+.about-magazine-description {
+    color: #565C66;
+}
+
+.news {
+    color: #2D3440;
+    background-color: #ffffff;
+    background-image: url("../images/index/background-news.jpg");
+    background-size: 100% auto;
+    border-radius: 16px;
+}
+
+.news-description {
+    line-height: 20px;
+    color: #565C66;
+}
+
+.news-link {
+    text-decoration: none;
+}
+
+.news-title {
+    line-height: 30px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #2D3440;
+}
+
+.subscription {
+    background-color: #ffffff;
+    background-image: url("../images/index/background-subscription.jpg");
+    background-size: 100% auto;
+    border-radius: 16px;
+}
+
+.subscription-container {
+    background: #FFFFFF;
+    border-radius: 16px;
+}
+
+.subscription-info {
+    color: #565C66;
+}
+
+.delivery {
+    color: #2D3440;
+    background-color: #ffffff;
+    background-image: url("../images/index/background-delivery.jpg");
+    background-size: 100% auto;
+    border-radius: 16px;
+}
+
+.delivery-title {
+    color: #2D3440;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 46px;
+}
+
+.delivery-description {
+    color: #565C66;
+}
+
+.delivery-form-description {
+    color: #565C66;
+}
+
+.delivery-label {
+    color: #2D3440;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.delivery-input {
+    color: #B9B9B9;
+    line-height: 20px;
+}
+
+.button-send {
+    text-align: center;
+    color: #FCFCFC;
+    text-decoration: none;
+    background: #FF2F64;
+    border: 4px solid rgba(255, 47, 100, 0.3);
+    box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
+    border-radius: 26px;    
+    background-clip: padding-box;
+}
+
+.magazine-info {
+    color: #2D3440;
+    background-color: #ffffff;
+    background-image: url("../images/index/background-feedback.jpg");
+    background-size: 100% auto;
+    border-radius: 16px;
+}
+
+.address-description {
+    color: #565C66;
+}
+
+.magazine-address {
+    color: #2D3440;
+    font-weight: 700;
+    font-size: 20px;
+    font-style: normal;
+    line-height: 24px;
+}
+
+.order-description {
+    color: #565C66;
+}
+
+.magazine-info-contacts-phone {
+    text-decoration: none;
+    color: #2D3440;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.order-time {
+    color: #565C66;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.button-feedback {
+    text-align: center;
+    color: #FCFCFC;
+    text-decoration: none;
+    background: #FF2F64;
+    border: 4px solid rgba(255, 47, 100, 0.3);
+    box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
+    border-radius: 26px;
+    background-clip: padding-box;
+}
+
+.for-suppliers {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.for-suppliers-description {
+    font-weight: 700;
+    color: #2D3440;
+}
+
+.for-suppliers-link a {
+    text-decoration: none;
+    color: #2D3440;
+}
+
+.footer-developers-description {
+    font-size: 12px;
+    line-height: 16px;
+    color: #2D3440;
+}
+
+.footer-developers-link {
+    color: #2D3440;
+}
+
+/* Каталог */
+
+.breadcrumbs-link {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #2D3440;
+}
+
+.breadcrumbs-link.active {
+    text-decoration: underline;
+    color: #2D3440;
+}
+
+.inner-header-title {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 46px;
+    color: #2D3440;
+}
+
+.catalog-filter-title {
+    font-size: 14px;
+    line-height: 20px;
+    color: #2D3440;
+}
+
+.select-control {
+    font-size: 14px;
+    line-height: 20px;
+    color: #2D3440;
+}
+
+.catalog-filter-item {
+    font-size: 14px;
+    line-height: 20px;
+    color: #2D3440;
+}
+
+.button-filter-apply {
+    text-align: center;
+    font-size: 14px;
+    color: #2D3440;
+    background: rgba(252, 252, 252, 0.3);
+    border: 2px solid #FCFCFC;
+    border-radius: 20px;
+    background-clip: padding-box;
+}
+
+.button-pagination-show-more {
+    text-align: center;
+    color: #2D3440;
+    background: #FCFCFC;
+    border: 4px solid rgba(252, 252, 252, 0.4);
+    box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
+    border-radius: 26px;
+    background-clip: padding-box;
+}
+
+.pagination-link {
+    text-decoration: none;
+    line-height: 20px;
+    color: #2D3440;
+}
