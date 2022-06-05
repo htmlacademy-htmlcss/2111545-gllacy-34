@@ -20,7 +20,15 @@
     font-display: swap;
 }
 
+html {
+    height: 100%;
+}
+
 body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;  /* Высота <body> равна высоте <html> */
     font-family: "Inter", sans-serif;
     font-size: 16px;
     line-height: 22px;
@@ -35,10 +43,30 @@ body {
     line-height: 20px;
 }
 
-page-header {
+.page-header {
     line-height: 20px;
     color: #2D3440;
     background-color: #FEAFC3;
+    
+    width: 1170px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.logo-image {
+    margin-right: 16px;
+}
+
+.navigation {
+    display: flex;
+}
+
+.navigation-list {
+    margin: 0;
+    padding: 0;
+    width: 400px;
+    margin-right: 186px;
+    list-style: none;
 }
 
 .navigation-link {
@@ -50,6 +78,19 @@ page-header {
     color: #FCFCFC;
     background: #FF4A78;
     border-radius: 30px;
+} 
+
+.contacts-phone {
+    width: 148px;
+}
+
+.navigation-user {
+    margin: 0;
+    padding: 0;
+    width: 267px;
+    max-width: 300px;
+    margin-left: 16px;
+    list-style: none;
 }
 
 .navigation-user-item {
@@ -67,6 +108,22 @@ page-header {
     color: inherit; /*Наследование от page-header*/
     text-decoration: none;
     font-size: 14px;
+}
+
+.main-container {
+    flex-grow: 1;
+}
+
+.page-container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.slider-ice-cream-list {
+    margin: 0;
+    margin-bottom: 80px;
+    padding: 0;
+    list-style: none;
 }
 
 .slider-ice-cream-title {
@@ -93,9 +150,38 @@ page-header {
     background-clip: padding-box;
 }
 
+.navigation-button-list {
+    margin: 0;
+    padding: 0;
+}
+
+.navigation-points-list {
+    margin: 0;
+    padding: 0;
+}
+
+.social-list {
+    margin: 0;
+    padding: 0;
+}
+
+.present {
+    width: 1170px;
+    margin-bottom: 80px;
+}
+
+.present-list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
 .present-list-item {
     background: #FF7799;
     border-radius: 16px;
+    width: 570px;
 }
 
 .present-title {
@@ -128,6 +214,11 @@ page-header {
     background-clip: padding-box;
 }
 
+.popular-product {
+    width: 1170px;
+    margin-bottom: 80px;
+}
+
 .popular-product-title {
     line-height: 46px;
     font-size: 32px;
@@ -136,10 +227,14 @@ page-header {
     text-align: center;
 }
 
-.product-card {
-    background: #FCFCFC;
-    border-radius: 8px;
+.popular-product-list {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    list-style: none;
 }
+
 
 .product-card-link {
     text-decoration: none;
@@ -175,11 +270,15 @@ page-header {
     background-image: url("../images/index/background-about-magazine.jpg");
     background-size: 100% auto;
     border-radius: 16px;
+    width: 1170px;
+    margin-bottom: 80px;
 }
 
 .about-magazine-info {
     background: #FFFFFF;
     border-radius: 16px;
+    width: 1122px;
+    margin: 0 auto;
 }
 
 .about-magazine-title {
@@ -194,12 +293,21 @@ page-header {
     color: #565C66;
 }
 
+.news-container{
+    width: 1170px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
 .news {
     color: #2D3440;
     background-color: #ffffff;
     background-image: url("../images/index/background-news.jpg");
+    background-repeat: no-repeat;
     background-size: 100% auto;
     border-radius: 16px;
+    width: 570px;
 }
 
 .news-description {
@@ -223,11 +331,14 @@ page-header {
     background-image: url("../images/index/background-subscription.jpg");
     background-size: 100% auto;
     border-radius: 16px;
+    width: 570px;
 }
 
 .subscription-container {
     background: #FFFFFF;
     border-radius: 16px;
+    width: 558px;
+    margin: 0 auto;
 }
 
 .subscription-info {
@@ -240,6 +351,8 @@ page-header {
     background-image: url("../images/index/background-delivery.jpg");
     background-size: 100% auto;
     border-radius: 16px;
+    width: 1170px;
+    margin-bottom: 80px;
 }
 
 .delivery-title {
@@ -285,6 +398,7 @@ page-header {
     background-image: url("../images/index/background-feedback.jpg");
     background-size: 100% auto;
     border-radius: 16px;
+    width: 1170px;
 }
 
 .address-description {
@@ -328,14 +442,37 @@ page-header {
     background-clip: padding-box;
 }
 
+.page-footer-container {
+    display: flex;
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.footer-social {
+    width: 104px;
+    margin-right: 299px;
+}
+
+.footer-social-list {
+    margin: 0;
+    padding: 0;
+}
+
 .for-suppliers {
     font-size: 14px;
     line-height: 20px;
+    width: 356px;
+    margin-right: 200px;
 }
 
 .for-suppliers-description {
     font-weight: 700;
     color: #2D3440;
+}
+
+.for-suppliers-link {
+    margin: 0;
+    padding: 0;
 }
 
 .for-suppliers-link a {
@@ -355,6 +492,11 @@ page-header {
 
 /* Каталог */
 
+.breadcrumbs {
+    margin: 0;
+    padding: 0;
+}
+
 .breadcrumbs-link {
     text-decoration: none;
     font-weight: 700;
@@ -373,6 +515,16 @@ page-header {
     font-size: 32px;
     line-height: 46px;
     color: #2D3440;
+}
+
+.catalog-filter-list {
+    margin: 0;
+    padding: 0;
+}
+
+.catalog-filter {
+    width: 823px;
+    margin-bottom: 44px;
 }
 
 .catalog-filter-title {
@@ -403,6 +555,33 @@ page-header {
     background-clip: padding-box;
 }
 
+.product-list {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 1170px;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+}
+
+.product-card {
+    background: #FCFCFC;
+    border-radius: 8px;
+    width: 270px;
+}
+
+.pagination {
+    padding: 0;
+    margin: 0;
+}
+
+.pagination-container {
+    display: flex;
+    margin-bottom: 40px;
+}
+
 .button-pagination-show-more {
     text-align: center;
     color: #2D3440;
@@ -411,6 +590,12 @@ page-header {
     box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
     border-radius: 26px;
     background-clip: padding-box;
+    width: 179px;
+    margin-right: 335px;
+}
+
+.pagination {
+    width: 168px;
 }
 
 .pagination-link {
