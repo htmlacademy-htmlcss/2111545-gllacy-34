@@ -121,7 +121,6 @@ body {
     width: 267px;
     list-style: none;
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
@@ -137,6 +136,11 @@ body {
     color: inherit; /*Наследование от page-header*/
     text-decoration: none;
     font-size: 14px;
+    padding: 6px 16px;
+}
+
+.navigation-user-item:not(:last-child) {
+    margin-right: 16px;
 }
 
 .navigation-user-link.search {
