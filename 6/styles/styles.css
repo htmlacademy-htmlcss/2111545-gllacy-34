@@ -107,7 +107,6 @@ body {
 
 .contacts-phone {
     display: block;
-    width: 148px;
     margin: auto;
     margin-right: 16px;
     color: inherit; /*Наследование от page-header*/
@@ -115,13 +114,16 @@ body {
     text-decoration: none;
 }
 
+.navigation-user-container {
+    display: flex;
+    width: 431px;
+}
+
 .navigation-user {
     margin: 0;
     padding: 0;
-    width: 267px;
     list-style: none;
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
@@ -137,6 +139,11 @@ body {
     color: inherit; /*Наследование от page-header*/
     text-decoration: none;
     font-size: 14px;
+    padding: 6px 16px;
+}
+
+.navigation-user-item:not(:last-child) {
+    margin-right: 16px;
 }
 
 .navigation-user-link.search {
@@ -208,6 +215,7 @@ body {
     box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
     background-clip: padding-box;
     padding: 12px 32px;
+    box-sizing: border-box;
 }
 
 .slider-container-images {
@@ -295,6 +303,7 @@ body {
 }
 
 .present-title-description {
+    margin: 0;
     line-height: 30px;
     font-size: 24px;
     font-weight: 700;
@@ -337,7 +346,7 @@ body {
     text-align: center;
     max-width: 527px;
     margin: 0 auto;
-    margin-bottom: 55px;
+    margin-bottom: 105px;
 }
 
 .popular-product-list {
@@ -351,11 +360,6 @@ body {
 .product-card-link {
     display: block;
     text-decoration: none;
-}
-
-.product-card-image {
-    display: block;
-    margin: 0 auto;
 }
 
 .product-card-title {
@@ -379,6 +383,10 @@ body {
     max-width: 190px;
 }
 
+.product-card-price-container {
+    display: flex;
+}
+
 .product-card-price {
     margin: 0;
     padding: 0;
@@ -388,6 +396,7 @@ body {
     color: #2D3440;
     margin-left: 40px;
     max-width: 100px;
+    margin-right: 73px;
 }
 
 .button-add-bascet {
@@ -405,15 +414,19 @@ body {
     border-radius: 16px;
     width: 1170px;
     margin-bottom: 80px;
+    padding: 24px;
+    box-sizing: border-box;
 }
 
 .about-magazine-info {
     background: #FFFFFF;
     border-radius: 16px;
     width: 1122px;
-    margin: 0 auto;
     padding-top: 56px;
     padding-bottom: 56px;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-sizing: border-box;
 }
 
 .about-magazine-title {
@@ -429,9 +442,20 @@ body {
 }
 
 .about-magazine-list {
+    display: flex;
+    flex-wrap: wrap;
     padding: 0;
     margin: 0;
     list-style: none;
+}
+
+.about-magazine-item {
+    margin-right: 31px;
+    width: 505px;
+}
+
+.about-magazine-item:nth-child(2n) {
+    margin-right: 0;
 }
 
 .about-magazine-description {
@@ -439,6 +463,7 @@ body {
     padding: 0;
     color: #565C66;
     width: 442px;
+    margin-left: auto;
 }
 
 .news-container{
@@ -491,14 +516,15 @@ body {
     background-size: 100% auto;
     border-radius: 16px;
     width: 570px;
+    padding: 6px;
 }
 
 .subscription-container {
     background: #FFFFFF;
     border-radius: 16px;
     width: 558px;
-    padding-top: 26px;
-    padding-bottom: 26px;
+    padding: 26px;
+    box-sizing: border-box;
 }
 
 .subscription-info {
@@ -510,17 +536,31 @@ body {
 }
 
 .subscription-form {
+    display: flex;
     width: 506px;
 }
 
+.subscription-description {
+    margin-right: 14px;
+}
+
 .delivery {
+    display: flex;
+    box-sizing: border-box;
     color: #2D3440;
     background-color: #ffffff;
     background-image: url("../images/index/background-delivery.jpg");
     background-size: 100% auto;
     border-radius: 16px;
     width: 1170px;
+    padding: 64px;
     margin-bottom: 80px;
+    padding-left: 100px;
+}
+
+.delivery-title-description-container {
+    width: 371px;
+    margin-right: 135px;
 }
 
 .delivery-title {
@@ -532,6 +572,7 @@ body {
     line-height: 46px;
     width: 356px;
     margin-bottom: 24px;
+    padding-top: 103px;
 }
 
 .delivery-description {
@@ -547,6 +588,9 @@ body {
     padding-top: 40px;
     padding-bottom: 42px;
     border-radius: 8px;
+    padding: 40px;
+    padding-bottom: 42px;
+    box-sizing: border-box;
 }
 
 .delivery-form-description {
@@ -591,14 +635,17 @@ body {
     background-size: 100% auto;
     border-radius: 16px;
     height: 492px;
+    padding: 64px;
+    padding-right: 763px;
+    box-sizing: border-box;
 }
 
 .magazine-address-and-feedback {
     background-color: #FCFCFC;
     width: 343px;
     border-radius: 8px;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding: 40px;
+    box-sizing: border-box;
 }
 
 .address-description {
@@ -683,7 +730,7 @@ body {
 
 .footer-social-item:nth-child(3n) {
     margin-right: 0;
-  }
+}
 
 .footer-social-list {
     display: flex;
@@ -706,6 +753,7 @@ body {
 }
 
 .for-suppliers-link {
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -714,6 +762,10 @@ body {
 .for-suppliers-link a {
     text-decoration: none;
     color: #2D3440;
+}
+
+.footer-developers {
+    width: 193px;
 }
 
 .footer-developers-description {
@@ -825,11 +877,20 @@ body {
     border-radius: 8px;
     width: 270px;
     min-height: 281px;
-    padding-bottom: 28px; ;
+    padding-bottom: 24px;
+}
+
+.product-card-image {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    margin-top: -50px;
+    margin-bottom: 20px;
 }
 
 .pagination-container {
     display: flex;
+    justify-content: flex-end;
     margin-bottom: 40px;
     padding-top: 41px;
     padding-bottom: 41px;
@@ -837,6 +898,7 @@ body {
 
 .pagination {
     display: flex;
+    align-items: center;
     padding: 0;
     margin: 0;
     list-style: none;
@@ -850,16 +912,14 @@ body {
     box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
     border-radius: 26px;
     background-clip: padding-box;
-    width: 179px;
-    height: 44px;
+    min-width: 179px;
+    min-height: 44px;
     margin-right: 335px;
-    margin-left: 335px;
     padding: 12px 32px;
 }
 
 .pagination {
     width: 168px;
-    margin-left: auto;
 }
 
 .pagination-link {

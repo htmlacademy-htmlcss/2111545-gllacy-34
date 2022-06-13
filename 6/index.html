@@ -4,7 +4,6 @@
     <meta charset="utf-8" />
     <title>HTML Academy: Глейси</title>
     <link rel="stylesheet" href="styles/styles.css" />
-    <!-- <link rel="stylesheet" href="styles/outline.css" /> -->
     <link rel="icon" href="favicon.ico" />
     <link rel="icon" type="image/png" href="images/icon/favicon_small.png" />
     <base href="https://htmlacademy-htmlcss.github.io/2111545-gllacy-34/6/">
@@ -35,26 +34,29 @@
           </li>
         </ul>
 
-        <a class="contacts-phone" href="tel:+78005558628">+7 800 555-86-28</a>
+        <div class="navigation-user-container">
+          <a class="contacts-phone" href="tel:+78005558628">+7 800 555-86-28</a>
 
-        <ul class="navigation-user">
-          <li class="navigation-user-item">
-            <a class="navigation-user-link search" href="#">
-              <span class="visually-hidden"> Поиск. </span>
-            </a>
-          </li>
-          <li class="navigation-user-item">
-            <a class="navigation-user-link" href="#">
-              <span class="login"> Вход </span>
-            </a>
-          </li>
-          <li class="navigation-user-item">
-            <a class="navigation-user-link" href="# ">
-              <p class="basket">2 товара</p>
-              <span class="visually-hidden"> Корзина. </span>
-            </a>
-          </li>
-        </ul>
+          <ul class="navigation-user">
+            <li class="navigation-user-item">
+              <a class="navigation-user-link search" href="#">
+                <span class="visually-hidden"> Поиск. </span>
+              </a>
+            </li>
+            <li class="navigation-user-item">
+              <a class="navigation-user-link" href="#">
+                Вход
+                <span class="visually-hidden">Личный кабинет.</span>
+              </a>
+            </li>
+            <li class="navigation-user-item">
+              <a class="navigation-user-link" href="# ">
+                2 товара
+                <span class="visually-hidden">Корзина.</span>
+              </a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
 
@@ -279,10 +281,12 @@
               <p class="product-card-description">
                 Сливочное мороженое с малиновым джемом
               </p>
-              <p class="product-card-price">310 ₽/кг</p>
-              <a class="button-add-bascet" href="#">
-                <span class="visually-hidden"> Добавить в корзину. </span>
-              </a>
+              <div class="product-card-price-container"> 
+                <p class="product-card-price">310 ₽/кг</p>
+                <a class="button-add-bascet" href="#">
+                  <span class="visually-hidden"> Добавить в корзину. </span>
+                </a>
+              </div>
             </li>
 
             <li class="product-card">
@@ -299,10 +303,12 @@
               <p class="product-card-description">
                 Фисташковый пломбир с кусочками шоколада
               </p>
-              <p class="product-card-price">340 ₽/кг</p>
-              <a class="button-add-bascet" href="#">
-                <span class="visually-hidden"> Добавить в корзину. </span>
-              </a>
+              <div class="product-card-price-container">
+                <p class="product-card-price">340 ₽/кг</p>
+                <a class="button-add-bascet" href="#">
+                  <span class="visually-hidden"> Добавить в корзину. </span>
+                </a>
+              </div>
             </li>
 
             <li class="product-card">
@@ -319,10 +325,12 @@
               <p class="product-card-description">
                 Крем-брюле с черничным джемом
               </p>
-              <p class="product-card-price">330 ₽/кг</p>
-              <a class="button-add-bascet" href="#">
-                <span class="visually-hidden"> Добавить в корзину. </span>
-              </a>
+              <div class="product-card-price-container">
+                <p class="product-card-price">330 ₽/кг</p>
+                <a class="button-add-bascet" href="#">
+                  <span class="visually-hidden"> Добавить в корзину. </span>
+                </a>
+              </div>
             </li>
 
             <li class="product-card">
@@ -339,10 +347,12 @@
               <p class="product-card-description">
                 Ванильный пломбир со сладкой посыпкой
               </p>
-              <p class="product-card-price">320 ₽/кг</p>
-              <a class="button-add-bascet" href="#">
-                <span class="visually-hidden"> Добавить в корзину. </span>
-              </a>
+              <div class="product-card-price-container">
+                <p class="product-card-price">320 ₽/кг</p>
+                <a class="button-add-bascet" href="#">
+                  <span class="visually-hidden"> Добавить в корзину. </span>
+                </a>
+              </div>
             </li>
           </ul>
         </section>
@@ -440,13 +450,15 @@
 
         <!--Блок доставки на дом-->
         <section class="delivery">
-          <h2 class="delivery-title">Доставка любимого мороженого на дом</h2>
+          <div class="delivery-title-description-container">
+            <h2 class="delivery-title">Доставка любимого мороженого на дом</h2>
 
-          <p class="delivery-description">
-            Хочется полакомиться любимым десертом, но нет времени съездить в
-            магазин? Закажите доставку мороженого на дом, и курьер привезёт вам
-            ваш заказ в течение часа!
-          </p>
+            <p class="delivery-description">
+              Хочется полакомиться любимым десертом, но нет времени съездить в
+              магазин? Закажите доставку мороженого на дом, и курьер привезёт вам
+              ваш заказ в течение часа!
+            </p>
+          </div>
 
           <form class="delivery-form" action="#" method="post">
             <p class="delivery-form-description">
@@ -556,9 +568,11 @@
 
         <section class="for-suppliers">
           <h3 class="visually-hidden">Информация для поставщиков.</h3>
-          <p class="for-suppliers-description">Для поставщиков</p>
 
           <ul class="for-suppliers-link">
+            <li class="for-suppliers-item">
+              <a class="for-suppliers-description">Для поставщиков</a>
+            </li>
             <li class="for-suppliers-item">
               <a class="for-suppliers-documents" href="#">Наши документы</a>
             </li>
