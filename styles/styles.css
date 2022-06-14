@@ -69,8 +69,6 @@ body {
 
 .navigation-logo {
     margin-right: 16px;
-    padding-top: 24px;
-    padding-bottom: 24px;
     display: block;
 }
 
@@ -107,7 +105,6 @@ body {
 
 .contacts-phone {
     display: block;
-    margin: auto;
     margin-right: 16px;
     color: inherit; /*Наследование от page-header*/
     font-weight: 700;
@@ -116,6 +113,7 @@ body {
 
 .navigation-user-container {
     display: flex;
+    align-items: center;
     width: 431px;
 }
 
@@ -330,6 +328,7 @@ body {
     border-radius: 26px;
     background-clip: padding-box;
     padding: 12px 32px;
+    display: inline-block;
 }
 
 .popular-product {
@@ -370,7 +369,6 @@ body {
     color: #2D3440;
     text-align: center;
     max-width: 190px;
-    margin: 0 auto;
     margin-bottom: 8px;
 }
 
@@ -385,6 +383,8 @@ body {
 
 .product-card-price-container {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .product-card-price {
@@ -394,9 +394,7 @@ body {
     font-size: 20px;
     font-weight: 700;
     color: #2D3440;
-    margin-left: 40px;
-    max-width: 100px;
-    margin-right: 73px;
+    min-width: 90px;
 }
 
 .button-add-bascet {
@@ -878,6 +876,9 @@ body {
     width: 270px;
     min-height: 281px;
     padding-bottom: 24px;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-sizing: border-box;
 }
 
 .product-card-image {
@@ -904,6 +905,10 @@ body {
     list-style: none;
 }
 
+.button-pagination {
+    margin-right: 335px;
+}
+
 .button-pagination-show-more {
     text-align: center;
     color: #2D3440;
@@ -914,7 +919,6 @@ body {
     background-clip: padding-box;
     min-width: 179px;
     min-height: 44px;
-    margin-right: 335px;
     padding: 12px 32px;
 }
 
