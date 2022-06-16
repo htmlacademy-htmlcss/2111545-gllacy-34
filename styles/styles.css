@@ -440,8 +440,9 @@ body {
 }
 
 .about-magazine-list {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 442px 442px;
+    gap: 40px 32px;
     padding: 0;
     margin: 0;
     list-style: none;
@@ -535,6 +536,7 @@ body {
 
 .subscription-form {
     display: flex;
+    justify-content: space-between;
     width: 506px;
 }
 
@@ -599,19 +601,33 @@ body {
     margin-bottom: 32px;
 }
 
+.delivery-form-container {
+    display: grid;
+    grid-template-columns: 117px 287px;
+    gap: 20px 16px;
+    margin-bottom: 32px;
+}
+
+.delivery-form-field {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.delivery-address {
+    grid-column: 1 / -1;
+}
+
 .delivery-label {
     color: #2D3440;
     font-weight: 700;
     line-height: 20px;
+    margin-bottom: 8px;
 }
 
 .delivery-input {
     color: #B9B9B9;
     line-height: 20px;
-}
-
-.delivery-address {
-    margin-bottom: 32px;
 }
 
 .button-send {
@@ -624,6 +640,11 @@ body {
     border-radius: 26px;    
     background-clip: padding-box;
     padding: 12px 32px;
+    display: block;
+}
+
+.button-send-delivery {
+    margin: 0 auto;
 }
 
 .magazine-info {
@@ -751,7 +772,9 @@ body {
 }
 
 .for-suppliers-link {
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: max-content max-content;
+    gap: 8px 24px;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -763,10 +786,13 @@ body {
 }
 
 .footer-developers {
+    align-self: flex-end;
     width: 193px;
 }
 
 .footer-developers-description {
+    padding: 0;
+    margin: 0;
     font-size: 12px;
     line-height: 16px;
     color: #2D3440;
@@ -826,7 +852,20 @@ body {
 
 .catalog-filter {
     width: 823px;
-    margin-bottom: 44px;
+    margin-bottom: 74px;
+}
+
+.catalog-filter-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.catalog-filter-group:not(:last-child):not(.last-filter) {
+    margin-right: 24px;
+}
+
+.catalog-filter-group.last-filter {
+    margin-right: 16px;
 }
 
 .catalog-filter-title {
@@ -849,6 +888,7 @@ body {
 }
 
 .button-filter-apply {
+    align-self: center;
     text-align: center;
     font-size: 14px;
     color: #2D3440;
@@ -860,13 +900,13 @@ body {
 }
 
 .product-list {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(4, 270px);
+    gap: 85px 30px;
     padding: 0;
     margin: 0;
     list-style: none;
     width: 1170px;
-    flex-wrap: wrap;
     margin-bottom: 16px;
 }
 
