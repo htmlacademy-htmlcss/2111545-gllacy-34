@@ -4,8 +4,8 @@
     <meta charset="utf-8" />
     <title>HTML Academy: Глейси</title>
     <link rel="stylesheet" href="styles/styles.css" />
-    <link rel="icon" href="favicon.ico" />
-    <link rel="icon" type="image/png" href="images/icon/favicon_small.png" />
+    <!-- <link rel="icon" href="favicon.ico" /> -->
+    <!-- <link rel="icon" type="image/png" href="images/icon/favicon_small.png" /> -->
   </head>
 
   <body>
@@ -24,6 +24,19 @@
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link" href="catalog.html">Каталог</a>
+
+            <div class="popover popover-catalog">
+              <div class="popover-catalog-content">
+                <h2 class="visually-hidden">Разделы каталога.</h2>
+                <ul class="popover-category-list">
+                  <li class="popover-category-item select"><a class="popover-category-link" href="#">Новинки</a></li>
+                  <li class="popover-category-item"><a class="popover-category-link" href="#">Сливочное</a></li>
+                  <li class="popover-category-item"><a class="popover-category-link" href="#">Щербеты</a></li>
+                  <li class="popover-category-item"><a class="popover-category-link" href="#">Фруктовый лед</a></li>
+                  <li class="popover-category-item"><a class="popover-category-link" href="#">Мелорин</a></li>
+                </ul>
+              </div>
+            </div>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">Доставка и оплата</a>
@@ -44,6 +57,17 @@
                 </svg>
                 <span class="visually-hidden"> Поиск. </span>
               </a>
+
+              <div class="popover popover-search">
+                <div class="popover-search-content">
+                  <h2 class="visually-hidden">Форма поиска.</h2>
+                  <form class="popover-search-form" action="#" method="post">
+                    <label class="visually-hidden" for="search">Поиск.</label>
+                    <input class="field popover-search-input" type="text" id="search" name="search" placeholder="Поиск по сайту"/>
+                  </form>
+                </div>
+              </div>
+
             </li>
             <li class="navigation-user-item">
               <a class="navigation-user-link navigation-user-link-login" href="#">
@@ -53,6 +77,27 @@
                 Вход
                 <span class="visually-hidden">Личный кабинет.</span>
               </a>
+
+              <div class="popover popover-login">
+                <div class="popover-login-content">
+                  <h2 class="popover-login-title">Личный кабинет</h2>
+                  <form class="popover-login-form" action="#" method="post">
+                    <label class="visually-hidden" for="auth">e-mail.</label>
+                    <input class="field popover-login-input" type="email" id="auth" name="auth" placeholder="email@example.com"/>
+                    <label class="visually-hidden" for="password">Пароль.</label>
+                    <input class="field popover-login-input" type="password" id="password" name="password" placeholder="01.04.2020"/>
+                  </form>
+
+                  <div class="auth-container">
+                    <a class="button button-send button-popver-login" href="#">Войти</a>
+                    <div class="popver-login-help">
+                      <a class="popover-login-info popover-login-forgot-password" href="#">Забыли пароль?</a>
+                      <a class="popover-login-info popover-login-registration" href="#">Регистрация</a>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
             </li>
             <li class="navigation-user-item">
               <a class="navigation-user-link navigation-user-link-basket" href="# ">
@@ -62,6 +107,49 @@
                 2 товара
                 <span class="visually-hidden">Корзина.</span>
               </a>
+
+              <div class="popover popover-cart">
+                <div class="popover-cart-content">
+                  <h2 class="popover-cart-title">Корзина</h2>
+                  <ul class="popver-card-list">
+                    <li class="popver-card-item">
+                      <img class="popver-card-image" src="images/catalog/ice-cream-raspberry.jpg" width="46px" height="46px" alt="Мороженое Малинка."/>
+                      <div class="popver-card-description">
+                        <h3 class="popver-card-info raspberry">Малинка</h3>
+                        <p class="popover-card-ice-cream-cost">1 кг х 310 ₽</p>
+                      </div>
+                      <p class="popver-card-info cost">310 ₽</p>
+                      <svg class="popover-card-icon-delete" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="#000000" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.803 4.13807C13.0634 3.87772 13.0634 3.45561 12.803 3.19526C12.5427 2.93491 12.1206 2.93491 11.8602 3.19526L7.99914 7.05633L4.13807 3.19526C3.87772 2.93491 3.45561 2.93491 3.19526 3.19526C2.93491 3.45561 2.93491 3.87772 3.19526 4.13807L7.05633 7.99914L3.19526 11.8602C2.93491 12.1206 2.93491 12.5427 3.19526 12.803C3.45561 13.0634 3.87772 13.0634 4.13807 12.803L7.99914 8.94195L11.8602 12.803C12.1206 13.0634 12.5427 13.0634 12.803 12.803C13.0634 12.5427 13.0634 12.1206 12.803 11.8602L8.94195 7.99914L12.803 4.13807Z"/>
+                      </svg>
+                    </li>
+
+                    <li class="popver-card-item">
+                      <img class="popver-card-image" src="images/catalog/ice-cream-bubble-gum.jpg" width="46px" height="46px" alt="Мороженое Малинка."/>
+                      <div class="popver-card-description">
+                        <h3 class="popver-card-info raspberry">Бабл-гам</h3>
+                        <p class="popover-card-ice-cream-cost">1,5 кг х 320 ₽</p>
+                      </div>
+                      <p class="popver-card-info cost">480 ₽</p>
+                      <svg class="popover-card-icon-delete" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="#000000" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.803 4.13807C13.0634 3.87772 13.0634 3.45561 12.803 3.19526C12.5427 2.93491 12.1206 2.93491 11.8602 3.19526L7.99914 7.05633L4.13807 3.19526C3.87772 2.93491 3.45561 2.93491 3.19526 3.19526C2.93491 3.45561 2.93491 3.87772 3.19526 4.13807L7.05633 7.99914L3.19526 11.8602C2.93491 12.1206 2.93491 12.5427 3.19526 12.803C3.45561 13.0634 3.87772 13.0634 4.13807 12.803L7.99914 8.94195L11.8602 12.803C12.1206 13.0634 12.5427 13.0634 12.803 12.803C13.0634 12.5427 13.0634 12.1206 12.803 11.8602L8.94195 7.99914L12.803 4.13807Z"/>
+                      </svg>
+                    </li>
+                  </ul>
+
+                  <div class="popover-card-order">
+                    <a class="button button-additional button-send button-popver-delivery" href="#">Оформить заказ</a>
+                    <p class="popver-card-info popover-card-cost">Итого: 790 ₽</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="popover popover-cart-empty">
+                <div class="popover-cart-empty-content">
+                  <h2 class="visually-hidden">Пустая корзина</h2>
+                  <h3 class="popover-cart-empty-description">Ваша корзина пока пуста</h3>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
@@ -470,7 +558,7 @@
                     <span class="visually-hidden">Email.</span>
                   </label>
                   <input
-                    class="field"
+                    class="subscription-field field"
                     placeholder="email@example.com"
                     type="email"
                     name="subscription-email"
@@ -511,7 +599,7 @@
                   <span class="visually-hidden info">Информация.</span>
                 </label>
                 <input
-                  class="delivery-input"
+                  class="field delivery-input"
                   type="text"
                   id="delivery-form-date"
                   name="delivery-form-date"
@@ -524,7 +612,7 @@
                   >Телефон</label
                 >
                 <input
-                  class="delivery-input"
+                  class="field delivery-input"
                   type="text"
                   id="delivery-form-phone"
                   name="delivery-form-phone"
@@ -535,10 +623,10 @@
               <p class="delivery-form-field delivery-address">
                 <label class="delivery-label" for="delivery-form-address">
                   Адрес
-                  <span class=" visually-hidden info">Информация.</span>
+                  <span class="visually-hidden info">Информация.</span>
                 </label>
                 <input
-                  class="delivery-input"
+                  class="field delivery-input"
                   type="text"
                   id="delivery-form-address"
                   name="delivery-form-address"
