@@ -85,7 +85,7 @@
                     <label class="visually-hidden" for="auth">e-mail.</label>
                     <input class="field popover-login-input" type="email" id="auth" name="auth" placeholder="email@example.com"/>
                     <label class="visually-hidden" for="password">Пароль.</label>
-                    <input class="field popover-login-input" type="password" id="password" name="password" placeholder="01.04.2020"/>
+                    <input class="field popover-login-input" type="password" id="password" name="password" placeholder="Введите пароль"/>
                   </form>
 
                   <div class="auth-container">
@@ -730,5 +730,29 @@
         </section>
       </div>
     </footer>
+
+    <div class="modal-container">
+      <div class="modal modal-user-auth">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Мы обязательно ответим вам!</h2>
+          
+          <label class="visually-hidden" for="username">Поиск.</label>
+          <input class="field modal-auth" type="text" id="username" name="username" placeholder="Имя и фамилия"/>
+          
+          <label class="visually-hidden" for="user_mail">Поиск.</label>
+          <input class="field modal-auth" type="text" id="user_mail" name="user_mail" placeholder="email@example.com"/>
+          
+          <label class="visually-hidden" for="user_text">Поиск.</label>
+          <input class="field modal-auth text-area" type="text" id="user_text" name="user_text" placeholder="В свободной форме"/>
+        
+          <button class="button button-send button-modal" type="submit">Отправить</button>
+          
+        </section>
+      </div>
+    </div>
+
   </body>
 </html>
