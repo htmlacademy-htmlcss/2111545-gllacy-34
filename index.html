@@ -59,13 +59,11 @@
               </a>
 
               <div class="popover popover-search">
-                <div class="popover-search-content">
-                  <h2 class="visually-hidden">Форма поиска.</h2>
-                  <form class="popover-search-form" action="#" method="post">
-                    <label class="visually-hidden" for="search">Поиск.</label>
-                    <input class="field popover-search-input" type="text" id="search" name="search" placeholder="Поиск по сайту"/>
-                  </form>
-                </div>
+                <h2 class="visually-hidden">Форма поиска.</h2>
+                <form class="popover-search-form" action="#" method="post">
+                  <label class="visually-hidden" for="search">Поиск.</label>
+                  <input class="field popover-search-input" type="search" id="search" name="search" placeholder="Поиск по сайту"/>
+                </form>
               </div>
 
             </li>
@@ -594,10 +592,18 @@
 
             <div class="delivery-form-container">
               <p class="delivery-form-field delivery-date">
-                <label class="delivery-label" for="delivery-form-date">
-                  Дата
-                  <span class="visually-hidden info">Информация.</span>
-                </label>
+                <span class="form-label form-label-icon">
+                  <label class="delivery-label" for="delivery-form-date">
+                      Дата
+                  </label>
+                  <span class="tooltip">
+                    <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                      <svg class="tooltip-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="#2D3440"><path d="M7 1.333a5.667 5.667 0 1 0 0 11.334A5.667 5.667 0 0 0 7 1.333ZM0 7a7 7 0 1 1 14 0A7 7 0 0 1 0 7Zm7-.667c.368 0 .667.299.667.667v2.533a.667.667 0 1 1-1.334 0V7c0-.368.299-.667.667-.667ZM7 3.8a.667.667 0 1 0 0 1.333h.007a.667.667 0 0 0 0-1.333H7Z"/></svg>
+                    </button>
+
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите желаемую дату доставки</span>
+                  </span>
+                </span>
                 <input
                   class="field delivery-input"
                   type="text"
@@ -621,10 +627,18 @@
               </p>
 
               <p class="delivery-form-field delivery-address">
-                <label class="delivery-label" for="delivery-form-address">
-                  Адрес
-                  <span class="visually-hidden info">Информация.</span>
-                </label>
+                <span class="form-label form-label-icon">
+                  <label class="delivery-label" for="delivery-form-address">
+                    Адрес
+                  </label>
+                  <span class="tooltip">
+                    <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                      <svg class="tooltip-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="#2D3440"><path d="M7 1.333a5.667 5.667 0 1 0 0 11.334A5.667 5.667 0 0 0 7 1.333ZM0 7a7 7 0 1 1 14 0A7 7 0 0 1 0 7Zm7-.667c.368 0 .667.299.667.667v2.533a.667.667 0 1 1-1.334 0V7c0-.368.299-.667.667-.667ZM7 3.8a.667.667 0 1 0 0 1.333h.007a.667.667 0 0 0 0-1.333H7Z"/></svg>
+                    </button>
+
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите желаемый адрес доставки</span>
+                  </span>
+                </span>
                 <input
                   class="field delivery-input"
                   type="text"
@@ -746,9 +760,9 @@
           <input class="field modal-auth" type="text" id="user_mail" name="user_mail" placeholder="email@example.com"/>
           
           <label class="visually-hidden" for="user_text">Поиск.</label>
-          <input class="field modal-auth text-area" type="text" id="user_text" name="user_text" placeholder="В свободной форме"/>
+          <textarea placeholder="В свободной форме" class="field modal-auth text-area" id="user_text" name="user_text"></textarea>
         
-          <button class="button button-send button-modal" type="submit">Отправить</button>
+          <button class="button button-additional button-send button-modal" type="submit">Отправить</button>
           
         </section>
       </div>
