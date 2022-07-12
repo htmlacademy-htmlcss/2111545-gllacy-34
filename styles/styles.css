@@ -83,7 +83,7 @@ body {
     margin: 0;
     padding: 0;
     width: 550px;
-    margin-right: 36px;
+    margin-right: 35px;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
@@ -147,7 +147,7 @@ body {
     color: inherit; /*Наследование от page-header*/
     text-decoration: none;
     font-size: 14px;
-    padding: 6px 14px;
+    padding: 5px 14px;
 }
 
 .navigation-icon {
@@ -192,7 +192,7 @@ body {
 }
 
 .slider {
-    margin-bottom: 80px;
+    margin-bottom: 74px;
     padding-bottom: 26px;
     
     position: relative;
@@ -219,13 +219,21 @@ body {
 .slide-one::before{
     content: "";
     position: absolute;
-    top: 121px;
-    left: 0px;
+    top: 114px;
     width: 312px;
     height: 312px;
     border-radius: 50%;
     background-color: #FFCBD8;
     z-index: -1;
+}
+
+.slider-image.active {
+    padding-top: 17px;
+}
+
+.slider-image {
+    padding-right: 18px;
+    padding-top: 29px;
 }
 
 .slide-two {
@@ -235,8 +243,8 @@ body {
 .slide-two::before{
     content: "";
     position: absolute;
-    top: 30px;
-    left: -15px;
+    top: 53px;
+    left: -18px;
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -252,8 +260,8 @@ body {
 .slide-three::before{
     content: "";
     position: absolute;
-    top: 30px;
-    left: -15px;
+    top: 53px;
+    left: -18px;
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -264,6 +272,7 @@ body {
 
 .container-description {
     padding-left: 70px;
+    margin-right: 21px;
 }
 
 .slider-ice-cream-title {
@@ -271,7 +280,7 @@ body {
     font-size: 36px;
     font-weight: 900;
     color: #2D3440;
-    padding-top: 136px;
+    padding-top: 132px;
     padding-bottom: 0;
     margin-top: 0;
     margin-bottom: 24px;
@@ -285,7 +294,7 @@ body {
     font-size: 18px;
     color: #2D3440;
     width: 414px;
-    margin-bottom: 48px;
+    margin-bottom: 42px;
 }
 
 .button-delivery {
@@ -299,11 +308,13 @@ body {
     border: 4px solid rgba(252, 252, 252, 0.4);
     box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
     background-clip: padding-box;
-    padding: 12px 32px;
+    padding: 12px 29px;
     box-sizing: border-box;
 }
 
 .slider-container-images {
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -323,8 +334,8 @@ body {
     padding: 0;
     list-style: none;
     position: absolute;
-    left: 560px;
-    top: 250px;
+    left: 538px;
+    top: 254px;
 }
 
 .navigation-button-item {
@@ -352,7 +363,7 @@ body {
     justify-content: flex-start;
     list-style: none;
     position: absolute;
-    bottom: -25px;
+    bottom: -19px;
 }
 
 .navigation-points-item:not(:last-child) {
@@ -380,8 +391,8 @@ body {
     display: flex;
     justify-content: flex-end;
     position: absolute;
-    right: 0;
-    bottom: -25px;
+    right: 0px;
+    bottom: -15px;
 }
 
 .social-item {
@@ -414,7 +425,7 @@ body {
 
 .present {
     width: 1170px;
-    margin-bottom: 80px;
+    margin-bottom: 79px;
 }
 
 .present-list {
@@ -477,7 +488,7 @@ body {
     margin: 0;
     padding: 0;
     color: #2D3440;
-    margin-bottom: 28px;
+    margin-bottom: 21px;
     max-width: 351px;
 }
 
@@ -490,7 +501,7 @@ body {
     box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
     border-radius: 26px;
     background-clip: padding-box;
-    padding: 12px 32px;
+    padding: 14px 28px;
     display: inline-block;
 }
 
@@ -534,6 +545,14 @@ body {
     max-width: 190px;
     margin-bottom: 8px;
 }
+
+.product-card-title:hover {
+    opacity: 80%;
+}
+
+.product-card-title:active{
+    opacity: 90%;
+} 
 
 .product-card-description {
     padding: 0;
@@ -607,7 +626,7 @@ body {
     text-align: center;
     width: 995px;
     margin: 0 auto;
-    margin-bottom: 56px;
+    margin-bottom: 54px;
 }
 
 .about-magazine-list {
@@ -627,7 +646,7 @@ body {
     background-image: url("../images/icon/ice-cream.svg");
     background-size: 16px 32px;
     background-repeat: no-repeat;
-    background-position: top 10px left 18px;
+    background-position: top 7px left 16px;
     box-sizing: border-box;
     position: relative;
 }
@@ -636,17 +655,17 @@ body {
     position: absolute;
     border-radius: 50%;
     content: "";
-    width: 48px;
-    height: 48px;
+    width: 44px;
+    height: 46px;
     border: 2px solid #2D3440;
-    top: 0px;
+    top: -2px;
 }
 
 .about-cow {
     background-image: url("../images/icon/cow.svg");
     background-size: 32px 32px;
     background-repeat: no-repeat;
-    background-position: top 10px left 11px;
+    background-position: top 7px left 8px;
     box-sizing: border-box;
     position: relative;
 }
@@ -655,17 +674,17 @@ body {
     position: absolute;
     border-radius: 50%;
     content: "";
-    width: 48px;
-    height: 48px;
+    width: 44px;
+    height: 46px;
     border: 2px solid #2D3440;
-    top: 0px;
+    top: -2px;
 }
 
 .about-leaf {
     background-image: url("../images/icon/leaf.svg");
     background-size: 19px 32px;
     background-repeat: no-repeat;
-    background-position: top 10px left 17px;
+    background-position: top 7px left 16px;
     box-sizing: border-box;
     position: relative;
 }
@@ -674,17 +693,17 @@ body {
     position: absolute;
     border-radius: 50%;
     content: "";
-    width: 48px;
-    height: 48px;
+    width: 44px;
+    height: 46px;
     border: 2px solid #2D3440;
-    top: 0px;
+    top: -2px;
 }
 
 .about-thermometer {
     background-image: url("../images/icon/thermometer.svg");
     background-size: 19px 32px;
     background-repeat: no-repeat;
-    background-position: top 10px left 17px;
+    background-position: top 7px left 16px;
     box-sizing: border-box;
     position: relative;
 }
@@ -693,10 +712,10 @@ body {
     position: absolute;
     border-radius: 50%;
     content: "";
-    width: 48px;
-    height: 48px;
+    width: 44px;
+    height: 46px;
     border: 2px solid #2D3440;
-    top: 0px;
+    top: -2px;
 }
 
 .about-magazine-description {
@@ -774,13 +793,14 @@ body {
     margin: 0;
     color: #565C66;
     width: 506px;
-    margin-bottom: 44px;
+    margin-bottom: 42px;
 }
 
 .subscription-form {
     display: flex;
     justify-content: space-between;
     width: 506px;
+    align-items: center;
 }
 
 .subscription-field {
@@ -797,6 +817,8 @@ body {
 }
 
 .subscription-description {
+    margin: 0;
+    padding: 0;
     margin-right: 14px;
 }
 
@@ -828,7 +850,7 @@ body {
     line-height: 46px;
     width: 356px;
     margin-bottom: 24px;
-    padding-top: 103px;
+    padding-top: 100px;
 }
 
 .delivery-description {
@@ -845,7 +867,7 @@ body {
     padding-bottom: 42px;
     border-radius: 8px;
     padding: 40px;
-    padding-bottom: 42px;
+    padding-bottom: 31px;
     box-sizing: border-box;
 }
 
@@ -854,14 +876,14 @@ body {
     margin: 0;
     color: #565C66;
     width: 380px;
-    margin-bottom: 32px;
+    margin-bottom: 30px;
 }
 
 .delivery-form-container {
     display: grid;
     grid-template-columns: 117px 287px;
     gap: 20px 16px;
-    margin-bottom: 32px;
+    margin-bottom: 28px;
 }
 
 .delivery-form-field {
@@ -879,7 +901,10 @@ body {
     color: #2D3440;
     font-weight: 700;
     line-height: 20px;
-    margin-bottom: 8px;
+}
+
+.delivery-label.phone {
+    margin-bottom: 5px;
 }
 
 .delivery-input {
@@ -925,6 +950,8 @@ body {
     width: 343px;
     border-radius: 8px;
     padding: 40px;
+    padding-top: 45px;
+    padding-bottom: 51px;
     box-sizing: border-box;
 }
 
@@ -973,7 +1000,7 @@ body {
     font-size: 14px;
     line-height: 20px;
     margin-top: 0;
-    margin-bottom: 32px;
+    margin-bottom: 43px;
 }
 
 .button-feedback {
@@ -992,13 +1019,13 @@ body {
     display: flex;
     width: 1170px;
     margin: 0 auto;
-    padding-top: 48px;
+    padding-top: 42px;
     padding-bottom: 48px;
 }
 
 .footer-social {
     width: 104px;
-    margin-right: 299px;
+    margin-right: 300px;
 }
 
 .footer-social-item {
@@ -1039,7 +1066,7 @@ body {
 .suppliers-heart::before {
     position: absolute;
     content: url("../images/icon/heart.svg");
-    left: -1px;
+    left: 3px;
     top: 2px;
 }
 
@@ -1063,8 +1090,11 @@ body {
 }
 
 .footer-developers {
-    align-self: flex-end;
+    padding-top: 40px;
     width: 193px;
+    background-image: url("../images/header/logo-htmlacademy.svg");
+    background-repeat: no-repeat;
+    box-sizing: border-box;
 }
 
 .footer-developers-description {
@@ -1089,7 +1119,7 @@ body {
 /* Каталог */
 
 .inner-header {
-    padding-top: 32px;
+    padding-top: 28px;
     margin-bottom: 40px;
 }
 
@@ -1141,7 +1171,7 @@ body {
 
 .catalog-filter {
     width: 923px;
-    margin-bottom: 74px;
+    margin-bottom: 92px;
 }
 
 .catalog-filter-container {
@@ -1255,8 +1285,16 @@ body {
 
 .filters-icon {
     position: absolute;
-    left: -3px;
+    left: -1px;
     top: 1px;
+}
+
+.filters-icon:hover {
+    fill: #FCFCFC;
+}
+
+.filters-icon:disabled {
+    fill: #2D3440;
 }
 
 .control-input:checked ~ .filters-icon:not(.filters-icon-checked) {
@@ -1404,12 +1442,12 @@ body {
 .product-list {
     display: grid;
     grid-template-columns: repeat(4, 270px);
-    gap: 85px 30px;
+    gap: 88px 30px;
     padding: 0;
     margin: 0;
     list-style: none;
     width: 1170px;
-    margin-bottom: 16px;
+    margin-bottom: 12px;
 }
 
 .product-card {
@@ -1428,7 +1466,7 @@ body {
     margin: 0 auto;
     border-radius: 50%;
     margin-top: -50px;
-    margin-bottom: 20px;
+    margin-bottom: -2px;
 }
 
 .pagination-container {
@@ -1767,6 +1805,11 @@ body {
 
 .field {
     border: 1px solid #B9B9B9;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: "Inter", sans-serif;
 }
 
 .field:hover {
@@ -1820,8 +1863,6 @@ body {
 }
 
 .popover-catalog {
-    padding: 14px;
-    padding-bottom: 14px;
     box-shadow: 0px 15px 40px rgba(45, 52, 64, 0.12);
     width: 135px;
     min-height: 188px;
@@ -1839,11 +1880,9 @@ body {
 }
 
 .popover-category-item.select {
-    padding-bottom: 22px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 20px;
-    position: relative;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+    margin-top: 8px;
 }
 
 .popover-category-link {
@@ -1854,17 +1893,36 @@ body {
     text-decoration: none;
 }
 
+.popover-category-link.current {
+    background-color: #FF4A78;;
+}
+
+.popover-category-link.active {
+    font-weight: 700;
+    position: relative;
+}
+
+.popover-category-item {
+    padding-left: 16px;
+    padding-bottom: 6px;
+    padding-top: 5px;
+}
+
+.popover-category-item:hover {
+    background-color: #FFCBD8;
+}
+
+.popover-category-item:active {
+    background-color: #FF7799;
+}
+
 .popover-category-item.select:after {
     content: "";
     border-bottom: 1px solid #B9B9B9;
     width: 103px;
     position: absolute;
-    left: 0;
-    top: 36px;
-}
-
-.popover-category-item:not(:last-child) {
-    margin-bottom: 12px;
+    left: 14px;
+    top: 45px;
 }
 
 .popover-search {
@@ -2191,7 +2249,7 @@ body {
     transform: translateX(-50%);
     z-index: 1;
 
-    display: none;
+   display: none;
 }
 
 .tooltip-toggle:hover + .tooltip-text,
@@ -2202,7 +2260,7 @@ body {
 .form-label-icon {
     position: relative;
     padding-right: 15px;
-    padding-bottom: 6px;
+    padding-bottom: 4px;
 }
 
 .tooltip-text:after {
@@ -2217,4 +2275,14 @@ body {
   left: -8px;
   top: 10px;
   margin-right: auto;
+}
+
+.tooltip-text:before {
+    content:'';
+    height: 10px;
+    width: 1px;
+    position: absolute;
+    left: -1px;
+    top: 12px;
+    background-color: #FFFFFF;
 }
