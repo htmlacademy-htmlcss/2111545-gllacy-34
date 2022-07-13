@@ -117,6 +117,14 @@ body {
     text-decoration: none;
 }
 
+.contacts-phone:hover {
+    color: #FFFFFF;
+}
+
+.contacts-phone:active {
+    opacity: 70%;
+}
+
 .navigation-user-container {
     display: flex;
     align-items: center;
@@ -391,7 +399,8 @@ body {
     display: flex;
     justify-content: flex-end;
     position: absolute;
-    right: 0px;
+    right: 0;
+    margin-right: -11px;
     bottom: -15px;
 }
 
@@ -417,10 +426,6 @@ body {
     left: -2px;
     fill: #FCFCFC;
     border-radius: 24px;
-}
-
-.social-item:nth-child(3n) {
-    margin-right: 0;
 }
 
 .present {
@@ -1032,16 +1037,15 @@ body {
     width: 24px;
     height: 24px;
     margin-right: 16px;
+    margin-bottom: 5px;
     position: relative;
-}
-
-.footer-social-item:nth-child(3n) {
-    margin-right: 0;
 }
 
 .footer-social-list {
     display: flex;
     flex-wrap: wrap;
+    flex-wrap: wrap;
+    max-width: 400px;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -1089,6 +1093,14 @@ body {
     color: #2D3440;
 }
 
+.for-suppliers-link:hover {
+    color: #FF4A78;
+}
+
+.for-suppliers-link:active {
+    opacity: 70%;
+}
+
 .footer-developers {
     padding-top: 40px;
     width: 193px;
@@ -1114,6 +1126,15 @@ body {
     color: #2D3440;
     text-decoration: none;
     border-bottom: 1px #2D3440 solid;
+}
+
+.footer-developers-link:hover {
+    color: #FCFCFC;
+    border-bottom: 1px #FCFCFC solid;
+}
+
+.footer-developers-link:active {
+    opacity: 80%;
 }
 
 /* Каталог */
@@ -1167,6 +1188,7 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .catalog-filter {
@@ -1784,23 +1806,22 @@ body {
 }
 
 .social-link:hover {
-    border: 2px solid rgba(252, 252, 252, 0.5);
+    border: 2px solid #FFCBD8;
     background-color: #2D3440;
 }
 
 .social-link:active {
-    border: 2px solid rgba(252, 252, 252, 0.5);
-    background-color: #2D3440;
+    border: 2px solid #fcfcfc80;
+    background-color: #565C66;
 }
 
 .social-link:active .social-icon {
-    opacity: 0.5;
-    fill: #FCFCFC 0.5;
+    fill: #fcfcfc80;
 }
 
 .social-link:focus {
     background-color: #2D3440;
-    border: 2px solid #2D3440;
+    border: 2px solid #FFCBD8;
 }
 
 .field {
@@ -1869,7 +1890,6 @@ body {
     box-sizing: border-box;
     top: 40px;
     left: 0;
-
     display: none;
 }
 
@@ -1891,6 +1911,10 @@ body {
     line-height: 20px;
     color: #2D3440;
     text-decoration: none;
+    padding-left: 16px;
+    padding-bottom: 6px;
+    padding-top: 5px;
+    display: block;
 }
 
 .popover-category-link.current {
@@ -1900,12 +1924,6 @@ body {
 .popover-category-link.active {
     font-weight: 700;
     position: relative;
-}
-
-.popover-category-item {
-    padding-left: 16px;
-    padding-bottom: 6px;
-    padding-top: 5px;
 }
 
 .popover-category-item:hover {
@@ -1987,6 +2005,15 @@ body {
     margin-bottom: 16px;
 }
 
+.popover-login-info:hover {
+    opacity: 70%;
+    color:#EA5454;
+}
+
+.popover-login-info:active {
+    opacity: 70%;
+}
+
 .auth-container {
     display: flex;
 }
@@ -2023,7 +2050,6 @@ body {
     padding: 48px;
     width: 441px;
     min-height: 382px;
-
     display: none;
 }
 
@@ -2072,9 +2098,9 @@ body {
 }
 
 .popver-card-description {
-    margin-right: 83px;
-    min-width: 92px;
-    
+    margin-right: 13px;
+    min-width: 162px;
+    max-width: 162px;
 }
 
 .popver-card-info {
@@ -2083,6 +2109,8 @@ body {
     font-weight: 700;
     font-size: 18px;
     line-height: 22px;
+    min-width: 162px;
+    max-width: 162px;
 }
 
 .popver-card-info.cost {
@@ -2097,7 +2125,23 @@ body {
     margin-top: 12px;
 }
 
+.popover-card-icon-delete:hover {
+    fill:#ff2f64;
+}
+
+.popover-card-icon-delete:active {
+    fill:#ba0b0b;
+}
+
+.popover-card-icon-delete:focus {
+    border: 2px solid #2D3440;
+}
+
 .popver-card-info.raspberry {
+    margin-bottom: 4px;
+}
+
+.popver-card-info.buble-gam {
     margin-bottom: 4px;
 }
 
@@ -2110,13 +2154,16 @@ body {
     margin: 0;
 }
 
-.button-popver-delivery {
-    display: inline-block;
-    margin-right: 23px;
+.popover-card-order {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.popover-card-cost {
-    display: inline-block;
+.button-popver-delivery {
+    display: block;
+    margin-right: 23px;
+    min-width: 140px;
 }
 
 .popover-cart-empty {
