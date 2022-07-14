@@ -11,15 +11,31 @@
 </head>
 
 <body>
+  <!-- Header -->
   <header class="page-header">
     <a class="navigation-logo" href="index.html">
       <img class="logo-image" src="images/icon/logo.svg" width="137" height="56" alt="Логотип компании." />
     </a>
 
+    <!-- Навигационная панель -->
     <nav class="navigation">
       <ul class="navigation-list">
         <li class="navigation-item">
           <a class="navigation-link active" href="catalog.html">Каталог</a>
+
+          <!-- Поповер с разделами каталога -->
+          <div class="popover popover-catalog">
+            <div class="popover-catalog-content">
+              <h2 class="visually-hidden">Разделы каталога.</h2>
+              <ul class="popover-category-list">
+                <li class="popover-category-item select"><a class="popover-category-link active" href="#">Новинки</a></li>
+                <li class="popover-category-item"><a class="popover-category-link" href="#">Сливочное</a></li>
+                <li class="popover-category-item"><a class="popover-category-link" href="#">Щербеты</a></li>
+                <li class="popover-category-item"><a class="popover-category-link" href="#">Фруктовый лед</a></li>
+                <li class="popover-category-item"><a class="popover-category-link" href="#">Мелорин</a></li>
+              </ul>
+            </div>
+          </div>
         </li>
         <li class="navigation-item">
           <a class="navigation-link" href="#">Доставка и оплата</a>
@@ -39,14 +55,47 @@
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M1.663 6.33a4.667 4.667 0 1 1 8.028 3.238.672.672 0 0 0-.123.123A4.667 4.667 0 0 1 1.664 6.33Zm8.412 4.688a6 6 0 1 1 .943-.943l2.45 2.45a.667.667 0 1 1-.943.943l-2.45-2.45Z" />
               </svg>
             </a>
+
+            <!-- Поповер с формой поиска -->
+            <div class="popover popover-search">
+              <h2 class="visually-hidden">Форма поиска.</h2>
+              <form action="https://echo.htmlacademy.ru" class="popover-search-form" action="#" method="post">
+                <label class="visually-hidden" for="search">Поиск.</label>
+                <input class="field popover-search-input" type="search" id="search" name="search" placeholder="Поиск по сайту" required/>
+              </form>
+            </div>
+
           </li>
           <li class="navigation-user-item">
+            
             <a class="navigation-user-link navigation-user-link-login" href="#">
-              <svg class="navigation-icon navigation-link-login" role="img" aria-label="Вход в личный кабинет."  aria-hidden="true" focusable="false"  width="14" height="14" xmlns="http://www.w3.org/2000/svg">
+              <svg class="navigation-icon navigation-link-login" role="img" aria-label="Вход в личный кабинет." aria-hidden="true" focusable="false"  width="14" height="14" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M8 .6667A.6667.6667 0 0 1 8.6667 0h2.6666a1.9997 1.9997 0 0 1 2 2v9.3333a1.9996 1.9996 0 0 1-2 2H8.6667a.6666.6666 0 1 1 0-1.3333h2.6666a.6664.6664 0 0 0 .4714-.1953.6664.6664 0 0 0 .1953-.4714V2a.6664.6664 0 0 0-.6667-.6667H8.6667A.6667.6667 0 0 1 8 .6667ZM4.8619 2.8619a.6667.6667 0 0 1 .9428 0L9.1338 6.191a.6731.6731 0 0 1 .129.177.664.664 0 0 1 .0705.2987.6639.6639 0 0 1-.1998.4759l-3.3288 3.3288a.6667.6667 0 1 1-.9428-.9428L7.057 7.3333H.6668A.6667.6667 0 1 1 .6667 6H7.057L4.862 3.8047a.6667.6667 0 0 1 0-.9428Z" />
               </svg>
-              Вход
+              <span>Вход</span>
             </a>
+
+            <!-- Поповер с формой авторизации -->
+            <div class="popover popover-login">
+              <div class="popover-login-content">
+                <h2 class="popover-login-title">Личный кабинет</h2>
+                <form action="https://echo.htmlacademy.ru" class="popover-login-form" action="#" method="post">
+                  <label class="visually-hidden" for="auth">e-mail.</label>
+                  <input class="field popover-login-input" type="email" id="auth" name="auth" placeholder="email@example.com" required/>
+                  <label class="visually-hidden" for="password">Пароль.</label>
+                  <input class="field popover-login-input" type="password" id="password" name="password" placeholder="Введите пароль" required/>
+                </form>
+
+                <div class="auth-container">
+                  <a class="button button-additional button-send button-popver-login" href="#">Войти</a>
+                  <div class="popver-login-help">
+                    <a class="popover-login-info popover-login-forgot-password" href="#">Забыли пароль?</a>
+                    <a class="popover-login-info popover-login-registration" href="#">Регистрация</a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
           </li>
           <li class="navigation-user-item">
             <a class="navigation-user-link navigation-user-link-basket" href="# ">
@@ -55,6 +104,51 @@
               </svg>
               2 товара
             </a>
+
+            <!-- Поповер с корзиной -->
+            <div class="popover popover-cart">
+              <div class="popover-cart-content">
+                <h2 class="popover-cart-title">Корзина</h2>
+                <ul class="popver-card-list">
+                  <li class="popver-card-item">
+                    <img class="popver-card-image" src="images/catalog/ice-cream-raspberry.jpg" width="46" height="46" alt="Мороженое Малинка."/>
+                    <div class="popver-card-description">
+                      <h3 class="popver-card-info raspberry">Малинка</h3>
+                      <p class="popover-card-ice-cream-cost">1 кг х 310 ₽</p>
+                    </div>
+                    <p class="popver-card-info cost">310 ₽</p>
+                    <svg class="popover-card-icon-delete" role="img" aria-label="Удалить из корзины." aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="#000000" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12.803 4.13807C13.0634 3.87772 13.0634 3.45561 12.803 3.19526C12.5427 2.93491 12.1206 2.93491 11.8602 3.19526L7.99914 7.05633L4.13807 3.19526C3.87772 2.93491 3.45561 2.93491 3.19526 3.19526C2.93491 3.45561 2.93491 3.87772 3.19526 4.13807L7.05633 7.99914L3.19526 11.8602C2.93491 12.1206 2.93491 12.5427 3.19526 12.803C3.45561 13.0634 3.87772 13.0634 4.13807 12.803L7.99914 8.94195L11.8602 12.803C12.1206 13.0634 12.5427 13.0634 12.803 12.803C13.0634 12.5427 13.0634 12.1206 12.803 11.8602L8.94195 7.99914L12.803 4.13807Z"/>
+                    </svg>
+                  </li>
+
+                  <li class="popver-card-item">
+                    <img class="popver-card-image" src="images/catalog/ice-cream-bubble-gum.jpg" width="46" height="46" alt="Мороженое Малинка."/>
+                    <div class="popver-card-description">
+                      <h3 class="popver-card-info buble-gam">Бабл-гам</h3>
+                      <p class="popover-card-ice-cream-cost">1,5 кг х 320 ₽</p>
+                    </div>
+                    <p class="popver-card-info cost">480 ₽</p>
+                    <svg class="popover-card-icon-delete" role="img" aria-label="Удалить из корзины." aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="#000000" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12.803 4.13807C13.0634 3.87772 13.0634 3.45561 12.803 3.19526C12.5427 2.93491 12.1206 2.93491 11.8602 3.19526L7.99914 7.05633L4.13807 3.19526C3.87772 2.93491 3.45561 2.93491 3.19526 3.19526C2.93491 3.45561 2.93491 3.87772 3.19526 4.13807L7.05633 7.99914L3.19526 11.8602C2.93491 12.1206 2.93491 12.5427 3.19526 12.803C3.45561 13.0634 3.87772 13.0634 4.13807 12.803L7.99914 8.94195L11.8602 12.803C12.1206 13.0634 12.5427 13.0634 12.803 12.803C13.0634 12.5427 13.0634 12.1206 12.803 11.8602L8.94195 7.99914L12.803 4.13807Z"/>
+                    </svg>
+                  </li>
+                </ul>
+
+                <div class="popover-card-order">
+                  <a class="button button-additional button-send button-popver-delivery" href="#">Оформить заказ</a>
+                  <p class="popver-card-info popover-card-cost">Итого: 790 ₽</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Поповер с пустой корзиной -->
+            <div class="popover popover-cart-empty">
+              <div class="popover-cart-empty-content">
+                <h2 class="visually-hidden">Пустая корзина.</h2>
+                <h3 class="popover-cart-empty-description">Ваша корзина пока пуста</h3>
+              </div>
+            </div>
           </li>
         </ul>
       </div>
@@ -65,6 +159,7 @@
     <div class="page-container">
       <h1 class="visually-hidden">Каталог.</h1>
 
+      <!-- Хлебные крошки -->
       <header class="inner-header">
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
@@ -79,11 +174,12 @@
       </header>
 
       <section class="catalog-products">
+        <!-- Фильтрация товаров -->
         <form action="https://echo.htmlacademy.ru" class="catalog-filter" action="#" method="get">
           <h2 class="visually-hidden">Список товаров с фильтрами.</h2>
 
           <div class="catalog-filter-container">
-            <!--Форма сортировки-->
+            <!-- Форма сортировки -->
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Сортировка:</legend>
               <select class="select-control" aria-label="Сортировка">
@@ -93,7 +189,7 @@
               </select>
             </fieldset>
 
-            <!--Начало формы цены-->
+            <!-- Форма цены -->
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Цена: 100 ₽ – 500 ₽</legend>
               <div class="range">
@@ -109,9 +205,8 @@
                 </div>
               </div>
             </fieldset>
-            <!--Конец формы цены-->
 
-            <!--Форма жирности-->
+            <!-- Форма жирности -->
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Жирность:</legend>
               <ul class="catalog-filter-list fat-content">
@@ -146,7 +241,7 @@
               </ul>
             </fieldset>
 
-            <!--Форма наполнителей-->
+            <!-- Форма наполнителей -->
             <fieldset class="catalog-filter-group last-filter">
               <legend class="catalog-filter-title">Наполнители:</legend>
               <ul class="catalog-filter-list fillers">
@@ -223,7 +318,7 @@
           </div>
         </form>
 
-        <!--Список товаров-->
+        <!-- Список товаров -->
         <ul class="product-list">
           <li class="product-card">
             <a class="product-card-link" href="#">
@@ -423,7 +518,8 @@
             <button class="button button-main button-pagination-show-more" type="button">Показать ещё</button>
           </div>
 
-          <!--Постраничная навигация-->
+          
+          <!-- Постраничная навигация -->
           <ul class="pagination">
             <li class="pagination-item">
               <button class="pagination-link pagination-prev pagination-disabled" type="button">
@@ -460,6 +556,7 @@
     </div>
   </main>
 
+  <!-- Footer -->
   <footer class="page-footer">
     <div class="page-footer-container">
       <section class="footer-social">
@@ -494,16 +591,16 @@
 
         <ul class="for-suppliers-link">
           <li class="for-suppliers-item">
-            <a class="for-suppliers-description suppliers-heart" href="#">Для поставщиков</a>
+            <a class="for-suppliers-link for-suppliers-description suppliers-heart" href="#">Для поставщиков</a>
           </li>
           <li class="for-suppliers-item">
-            <a class="for-suppliers-documents" href="#">Наши документы</a>
+            <a class="for-suppliers-link for-suppliers-documents" href="#">Наши документы</a>
           </li>
           <li class="for-suppliers-item">
-            <a class="for-suppliers-about-production" href="#">О производстве</a>
+            <a class="for-suppliers-link for-suppliers-about-production" href="#">О производстве</a>
           </li>
           <li class="for-suppliers-item">
-            <a class="eco-standards" href="#">Экологические стандарты</a>
+            <a class="for-suppliers-link eco-standards" href="#">Экологические стандарты</a>
           </li>
         </ul>
       </section>
@@ -513,7 +610,7 @@
         <a class="footer-developers-logo-link" href="https://htmlacademy.ru/">
           <img src="images/icon/logo-htmlacademy.svg" width="93" height="27" alt="Логотип HTML-Academy.">
         </a>
-        <p class="footer-developers-description">Сделано в <a class="footer-developers-link" href="https://htmlacademy.ru/">.html academy</a>© 2021</p>
+        <p class="footer-developers-description"> Сделано в <a class="footer-developers-link" href="https://htmlacademy.ru/">.html academy</a> © 2021</p>
       </section>
     </div>
   </footer>
