@@ -9,16 +9,19 @@
   </head>
 
   <body>
+    <!-- Header -->
     <header class="page-header">
       <a class="navigation-logo">
         <img class="logo-image" src="images/icon/logo.svg" width="137" height="56" alt="Логотип компании." />
       </a>
 
+      <!-- Навигационная панель -->
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link" href="catalog.html">Каталог</a>
 
+            <!-- Поповер с разделами каталога (для открытия добавить класс "popover-open")-->
             <div class="popover popover-catalog">
               <div class="popover-catalog-content">
                 <h2 class="visually-hidden">Разделы каталога.</h2>
@@ -51,6 +54,7 @@
                 </svg>
               </a>
 
+              <!-- Поповер с формой поиска (для открытия добавить класс "popover-open") -->
               <div class="popover popover-search">
                 <h2 class="visually-hidden">Форма поиска.</h2>
                 <form action="https://echo.htmlacademy.ru" class="popover-search-form" action="#" method="post">
@@ -62,13 +66,14 @@
             </li>
             <li class="navigation-user-item">
               
-              <a class="navigation-user-link navigation-user-link-login" href="#"> <!-- При открытии поповера добавить класс active -->
+              <a class="navigation-user-link navigation-user-link-login" href="#">
                 <svg class="navigation-icon navigation-link-login" role="img" aria-label="Вход в личный кабинет." aria-hidden="true" focusable="false"  width="14" height="14" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M8 .6667A.6667.6667 0 0 1 8.6667 0h2.6666a1.9997 1.9997 0 0 1 2 2v9.3333a1.9996 1.9996 0 0 1-2 2H8.6667a.6666.6666 0 1 1 0-1.3333h2.6666a.6664.6664 0 0 0 .4714-.1953.6664.6664 0 0 0 .1953-.4714V2a.6664.6664 0 0 0-.6667-.6667H8.6667A.6667.6667 0 0 1 8 .6667ZM4.8619 2.8619a.6667.6667 0 0 1 .9428 0L9.1338 6.191a.6731.6731 0 0 1 .129.177.664.664 0 0 1 .0705.2987.6639.6639 0 0 1-.1998.4759l-3.3288 3.3288a.6667.6667 0 1 1-.9428-.9428L7.057 7.3333H.6668A.6667.6667 0 1 1 .6667 6H7.057L4.862 3.8047a.6667.6667 0 0 1 0-.9428Z" />
                 </svg>
-                Вход
+                <span>Вход</span>
               </a>
 
+              <!-- Поповер с формой авторизации (для открытия добавить класс "popover-open") -->
               <div class="popover popover-login">
                 <div class="popover-login-content">
                   <h2 class="popover-login-title">Личный кабинет</h2>
@@ -98,6 +103,7 @@
                 2 товара
               </a>
 
+              <!-- Поповер с корзиной (для открытия добавить класс "popover-open") -->
               <div class="popover popover-cart">
                 <div class="popover-cart-content">
                   <h2 class="popover-cart-title">Корзина</h2>
@@ -134,6 +140,7 @@
                 </div>
               </div>
 
+              <!-- Поповер с пустой корзиной (для открытия добавить класс "popover-open") -->
               <div class="popover popover-cart-empty">
                 <div class="popover-cart-empty-content">
                   <h2 class="visually-hidden">Пустая корзина.</h2>
@@ -148,12 +155,12 @@
 
     <main class="main-container pink">
       <div class="page-container">
-        <!--Блок со слайдером-->
+        <!-- Блок со слайдером -->
         <section class="slider strawberry-jam">
           <h1 class="visually-hidden">Магазин мороженного Gllacy.</h1>
-          <!--Слайдер с выбором мороженого-->
+          <!-- Слайдер с выбором мороженого -->
           <ul class="slider-ice-cream-list">
-            <!--Слайд 1-->
+            <!-- Слайд 1 -->
             <li class="slider-ice-cream-item active">
               <div class="container-description">
                 <h2 class="slider-ice-cream-title">Нежный пломбир <br>с клубничным джемом</h2>
@@ -176,7 +183,7 @@
               </ul>
             </li>
 
-            <!--Слайд 2-->
+            <!-- Слайд 2 -->
             <li class="slider-ice-cream-item visually-hidden">
               <h2 class="slider-ice-cream-title">Сливочное мороженое со вкусом банана</h2>
               <p class="slider-ice-cream-description">Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и наслаждение даже в самый жаркий летний день.</p>
@@ -187,7 +194,7 @@
               <img class="slider-image-next" src="images/slider/ice-cream-strawberry.png" width="66" height="150" alt="Нежный пломбир с клубничным джемом."/>
             </li>
 
-            <!--Слайд 3-->
+            <!-- Слайд 3 -->
             <li class="slider-ice-cream-item visually-hidden">
               <h2 class="slider-ice-cream-title">Карамельный пломбир с маршмеллоу</h2>
               <p class="slider-ice-cream-description">Необычный сладкий десерт с карамельным топпингом и кусочками зефира завоюет сердца сладкоежек всех возрастов.</p>
@@ -199,7 +206,7 @@
             </li>
           </ul>
 
-          <!--Стрелочки для перемещения по слайдам-->
+          <!-- Стрелочки для перемещения по слайдам -->
           <ul class="navigation-button-list">
             <li class="navigation-button-item">
               <a class="navigation-button" href="#">
@@ -219,7 +226,7 @@
           </ul>
           
           <div class="slider-navigation-social">
-            <!--Точки внизу блока для перемещения по слайдам-->
+            <!-- Точки внизу блока для перемещения по слайдам -->
             <ul class="navigation-points-list">
               <li class="navigation-points-item">
                 <button class="navigation-points active" type="button">
@@ -264,7 +271,7 @@
           </div>
         </section>
 
-        <!--Блок с подарками-->
+        <!-- Блок с подарками -->
         <section class="present">
           <h2 class="present-title">Заказывайте мороженое и получайте подарки!</h2>
 
@@ -285,24 +292,18 @@
           </ul>
         </section>
 
-        <!--Блок с популярным мороженым-->
+        <!-- Блок с популярным мороженым -->
         <section class="popular-product">
           <h2 class="popular-product-title">Попробуйте самые популярные вкусы нашего мороженого</h2>
 
           <ul class="popular-product-list">
             <li class="product-card">
               <a class="product-card-link" href="#">
-                <img
-                  class="product-card-image"
-                  src="images/catalog/ice-cream-raspberry.jpg"
-                  width="168"
-                  height="168"
-                  alt="Мороженое Малинка."
-                />
+                <img class="product-card-image" src="images/catalog/ice-cream-raspberry.jpg" width="168" height="168" alt="Мороженое Малинка." />
                 <h3 class="product-card-title">Малинка</h3>
               </a>
               <p class="product-card-description">Сливочное мороженое с малиновым джемом</p>
-              <div class="product-card-price-container"> 
+              <div class="product-card-price-container">
                 <p class="product-card-price">310 ₽/кг</p>
                 <a class="button-add-bascet" href="#">
                   <svg class="product-icon-add-bascet" role="img" aria-label="Добавить товар в корзину." aria-hidden="true" focusable="false"  width="15" height="14" xmlns="http://www.w3.org/2000/svg">
@@ -311,10 +312,10 @@
                 </a>
               </div>
             </li>
-
+  
             <li class="product-card">
               <a class="product-card-link" href="#">
-                <img class="product-card-image" src="images/catalog/ice-cream-pistachio.jpg" width="168" height="168" alt="Мороженое Фисташка."/>
+                <img class="product-card-image" src="images/catalog/ice-cream-pistachio.jpg" width="168" height="168" alt="Мороженое Фисташка." />
                 <h3 class="product-card-title">Фисташка</h3>
               </a>
               <p class="product-card-description">Фисташковый пломбир с кусочками шоколада</p>
@@ -327,7 +328,7 @@
                 </a>
               </div>
             </li>
-
+  
             <li class="product-card">
               <a class="product-card-link" href="#">
                 <img class="product-card-image" src="images/catalog/ice-cream-blueberry.jpg" width="168" height="168" alt="Мороженое Черника." />
@@ -337,16 +338,16 @@
               <div class="product-card-price-container">
                 <p class="product-card-price">330 ₽/кг</p>
                 <a class="button-add-bascet" href="#">
-                  <svg class="product-icon-add-bascet" role="img" aria-label="Добавить товар в корзину." aria-hidden="true" focusable="false"  width="15" height="14" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="product-icon-add-bascet"  role="img" aria-label="Добавить товар в корзину." aria-hidden="true" focusable="false"  width="15" height="14" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M1.1667.25a.6667.6667 0 1 0 0 1.3333h1.7712l.4675 2.3354a.664.664 0 0 0 .0106.0531l.9674 4.8333.0001.0006a1.8255 1.8255 0 0 0 1.8183 1.4691h5.6207a1.8258 1.8258 0 0 0 1.8185-1.4697l.001-.005.9271-4.8614a.6669.6669 0 0 0-.6549-.7915H4.6107L4.1381.7858A.6667.6667 0 0 0 3.4844.25H1.1667ZM5.691 8.5444l-.8134-4.0639h8.2308l-.7756 4.0669a.4923.4923 0 0 1-.4918.3942v-.0001H6.1962v-.0001l-.0128.0002a.4922.4922 0 0 1-.4922-.3962l-.0002-.001Zm-1.1336 3.961c0-.6879.5577-1.2457 1.2457-1.2457.688 0 1.2457.5578 1.2457 1.2457 0 .688-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5577-1.2457-1.2457Zm6.3733 0c0-.6879.5577-1.2457 1.2457-1.2457.688 0 1.2457.5578 1.2457 1.2457 0 .688-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5577-1.2457-1.2457Z" />
                   </svg>
                 </a>
               </div>
             </li>
-
+  
             <li class="product-card">
               <a class="product-card-link" href="#">
-                <img class="product-card-image" src="images/catalog/ice-cream-bubble-gum.jpg" width="168" height="168" alt="Мороженое Бабл-гам."/>
+                <img class="product-card-image" src="images/catalog/ice-cream-bubble-gum.jpg" width="168" height="168" alt="Мороженое Бабл-гам." />
                 <h3 class="product-card-title">Бабл-гам</h3>
               </a>
               <p class="product-card-description">Ванильный пломбир <br> со сладкой посыпкой</p>
@@ -362,7 +363,7 @@
           </ul>
         </section>
 
-        <!--Блок с информацией о производителе-->
+        <!-- Блок с информацией о производителе -->
         <section class="about-magazine">
           <div class="about-magazine-info">
             <h2 class="about-magazine-title">Магазин Глейси – это онлайн и офлайн-магазин по продаже мороженогособственного производства на развес</h2>
@@ -385,13 +386,13 @@
 
               <li class="about-magazine-item about-thermometer">
                 <span class="visually-hidden"> Градусник. </span>
-                <p class="about-magazine-description">Доставка нашего мороженого осуществляется в специальном сохранить превосходный вкус.</p>
+                <p class="about-magazine-description">Доставка нашего мороженого осуществляется в специальном термопаке, который не даёт мороженому растаять и позволяет сохранить превосходный вкус.</p>
               </li>
             </ul>
           </div>
         </section>
 
-        <!--Блок с новостями-->
+        <!-- Блок с новостями -->
         <div class="news-container">
           <article class="news">
             <p class="news-description">Новое в нашем блоге</p>
@@ -400,7 +401,7 @@
             </a>
           </article>
 
-          <!--Блок подписки на рассылку-->
+          <!-- Блок подписки на рассылку -->
           <section class="subscription">
             <div class="subscription-container">
               <h3 class="visually-hidden">Подписка на рассылку.</h3>
@@ -419,7 +420,7 @@
           </section>
         </div>
 
-        <!--Блок доставки на дом-->
+        <!-- Блок доставки на дом -->
         <section class="delivery">
           <div class="delivery-title-description-container">
             <h2 class="delivery-title">Доставка любимого мороженого на дом</h2>
@@ -471,23 +472,24 @@
           </form>
         </section>
 
-        <!--Блок с контактами магазина-->
+        <!-- Блок с контактами магазина -->
         <div class="magazine-info">
           <section class="magazine-address-and-feedback">
             <h3 class="visually-hidden">Контакты и обратная связь.</h3>
-            <p class="address-description">Адрес главного офиса и офлайн-магазина:</p>
+            <p class="address-description">Адрес главного офиса <br> и офлайн-магазина:</p>
             <address class="magazine-address">наб. реки Карповки, <br> 5 лит П, Санкт-Петербург</address>
 
             <p class="order-description">Для заказов по телефону:</p>
             <a class="magazine-info-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
             <p class="order-time">(с 10 до 20 ежедневно)</p>
 
-            <a class="button button-additional button-feedback" href="#">Форма обратной связи </a>
+            <a class="button button-additional button-send button-feedback" href="#">Форма обратной связи </a>
           </section>
         </div>
       </div>
     </main>
 
+    <!-- Footer -->
     <footer class="page-footer">
       <div class="page-footer-container">
         <section class="footer-social">
@@ -546,10 +548,13 @@
       </div>
     </footer>
 
+    <!-- Модальное окно (для открытия добавить класс "modal-open") -->
     <div class="modal-container">
       <div class="modal modal-user-auth">
         <button class="modal-close-button" type="button">
-          <span class="visually-hidden">Закрыть.</span>
+          <svg class="modal-icon-delete" role="img" aria-label="Удалить из корзины." aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="#000000" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.803 4.13807C13.0634 3.87772 13.0634 3.45561 12.803 3.19526C12.5427 2.93491 12.1206 2.93491 11.8602 3.19526L7.99914 7.05633L4.13807 3.19526C3.87772 2.93491 3.45561 2.93491 3.19526 3.19526C2.93491 3.45561 2.93491 3.87772 3.19526 4.13807L7.05633 7.99914L3.19526 11.8602C2.93491 12.1206 2.93491 12.5427 3.19526 12.803C3.45561 13.0634 3.87772 13.0634 4.13807 12.803L7.99914 8.94195L11.8602 12.803C12.1206 13.0634 12.5427 13.0634 12.803 12.803C13.0634 12.5427 13.0634 12.1206 12.803 11.8602L8.94195 7.99914L12.803 4.13807Z"/>
+          </svg>
         </button>
         <section class="modal-content">
           <h2 class="modal-title">Мы обязательно ответим вам!</h2>
