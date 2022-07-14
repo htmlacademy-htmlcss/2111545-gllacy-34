@@ -450,14 +450,14 @@ body {
 }
 
 .present-list-item.raspberry {
-    background-image: url("../images/index/present-raspberry.png");
+    background-image: url("../images/present-raspberry.png");
     background-repeat: no-repeat;
     background-position:  bottom right 0px;
     box-sizing: border-box;
 }
 
 .present-list-item.marshmallow {
-    background-image: url("../images/index/present-marshmallow.png");
+    background-image: url("../images/present-marshmallow.png");
     background-repeat: no-repeat;
     background-position: bottom right 0px;
     box-sizing: border-box;
@@ -602,7 +602,7 @@ body {
 
 .about-magazine {
     background-color: #ffffff;
-    background-image: url("../images/index/background-about-magazine.jpg");
+    background-image: url("../images/background-about-magazine.jpg");
     background-size: 100% auto;
     border-radius: 16px;
     width: 1170px;
@@ -742,7 +742,7 @@ body {
 .news {
     color: #2D3440;
     background-color: #ffffff;
-    background-image: url("../images/index/background-news.jpg");
+    background-image: url("../images/background-news.jpg");
     background-repeat: no-repeat;
     background-size: 100% auto;
     border-radius: 16px;
@@ -778,7 +778,7 @@ body {
 
 .subscription {
     background-color: #ffffff;
-    background-image: url("../images/index/background-subscription.jpg");
+    background-image: url("../images/background-subscription.jpg");
     background-size: 100% auto;
     border-radius: 16px;
     width: 570px;
@@ -832,7 +832,7 @@ body {
     box-sizing: border-box;
     color: #2D3440;
     background-color: #ffffff;
-    background-image: url("../images/index/background-delivery.jpg");
+    background-image: url("../images/background-delivery.jpg");
     background-size: 100% auto;
     border-radius: 16px;
     width: 1170px;
@@ -941,7 +941,7 @@ body {
 .magazine-info {
     color: #2D3440;
     background-color: #ffffff;
-    background-image: url("../images/index/background-feedback.jpg");
+    background-image: url("../images/background-feedback.jpg");
     background-size: 100% auto;
     border-radius: 16px;
     height: 492px;
@@ -1094,7 +1094,7 @@ body {
 }
 
 .for-suppliers-link:hover {
-    color: #FF4A78;
+    color: #FFFFFF;
 }
 
 .for-suppliers-link:active {
@@ -1104,7 +1104,6 @@ body {
 .footer-developers {
     padding-top: 40px;
     width: 193px;
-    background-image: url("../images/header/logo-htmlacademy.svg");
     background-repeat: no-repeat;
     box-sizing: border-box;
 }
@@ -1274,14 +1273,6 @@ body {
     border-radius: 50%;
 }
 
-.control:hover .control-mark {
-    border-color: #FCFCFC;
-}
-  
-.control-input:disabled + .control-mark {
-    border-color: #00000080;
-}
-
 .control-input[type="radio"]:checked + .control-mark::before,
 .control-input[type="radio"]:checked + .control-mark::after {
   position: absolute;
@@ -1295,14 +1286,46 @@ body {
   content: "";
 }
 
+.control-input[type="radio"]:focus + .control-mark {
+    border: 2px solid #FCFCFC;
+}
+
+.control-input[type="radio"]:active + .control-mark {
+    border: 2px solid #2D3440;
+    opacity: 70%;
+}
+
 .control-input[type="radio"]:hover + .control-mark::before,
 .control-input[type="radio"]:hover + .control-mark::after {
   background-color: #FCFCFC;
 }
 
+.control:hover .control-mark {
+    border-color: #FCFCFC;
+}
+
 .control-input[type="radio"]:disabled + .control-mark::before,
 .control-input[type="radio"]:disabled + .control-mark::after {
   background-color: #00000080;
+}
+
+.control-input:disabled + .control-mark {
+    border-color: #00000080;
+}
+
+
+
+
+.control-input[type="checkbox"]:disabled + .filters-icon {
+  fill: #00000080;
+}
+
+.control-input[type="checkbox"]:focus + .filters-icon {
+    fill: #FCFCFC;
+}
+
+.control[type="checkbox"]:active + .filters-icon {
+    fill: #B9B9B9;
 }
 
 .filters-icon {
@@ -1406,9 +1429,9 @@ body {
     width: 68px;
     background-color: #565C66;
     border: 1px solid #565C66;
-  }
+}
 
-  .range-toggle {
+.range-toggle {
     padding: 0;
     position: absolute;
     display: block;
@@ -1419,25 +1442,25 @@ body {
     border: 6px solid #2D3440;
     border-radius: 50%;
     cursor: pointer;
-  }
+}
   
-  .range-toggle:hover {
+.range-toggle:hover {
     background-color: #2D3440;
     border: 6px solid #FCFCFC;
-  }
+}
   
-  .range-toggle:active{
+.range-toggle:active{
     background-color: #2D3440;
     border: 6px solid #2D3440;
-  } 
+} 
 
-  .range-toggle:focus {
+.range-toggle:focus {
     background-color: #2D3440;
     box-shadow: 0 0 0 2px #2D3440;
     border: 6px solid #FCFCFC;
 }
 
-  .toggle-min {
+.toggle-min {
   top: -8px;
   left: -3px;
 }
@@ -1553,6 +1576,8 @@ body {
 
 .pagination-next, .pagination-prev {
     padding: 0;
+    background-color: #FEAFC3;
+    cursor: pointer;
 }
 
 .pagination-link.pagination-current {
@@ -1570,6 +1595,10 @@ body {
 
 .pagination-prev-icon {
     left: 0px;
+}
+
+.pagination-next-icon:hover {
+    fill: #FFFFFF;
 }
 
 .pagination-item {
@@ -1648,7 +1677,7 @@ body {
     background: #FCFCFC;
     outline: 4px solid rgba(252, 252, 252, 0.4);
     box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
-    background-image: url("../images/icon/spinner_main.svg");
+    background-image: url("../images/icon/spinner-main.svg");
     background-repeat: no-repeat;
     background-position: center right 8px;
 }*/
@@ -1780,20 +1809,20 @@ body {
     border-radius: 50%;
 }
 
-.pagination-item:hover .number {
+.number:hover {
     background-color: rgba(252, 252, 252, 0.5);
     border-radius: 50%;
     padding: 1px 6px;
 }
 
-.pagination-item:active .number {
+.number:active {
     background-color: rgba(252, 252, 252, 0.5);
     border: 1px solid #FCFCFC;
     border-radius: 50%;
     padding: 1px 6px;
 }
 
-.pagination-item:focus .number {
+.number:focus {
     background-color: rgba(252, 252, 252, 0.3);
     border: 1px solid #2D3440;
     border-radius: 50%;
@@ -2050,7 +2079,8 @@ body {
     padding: 48px;
     width: 441px;
     min-height: 382px;
-    display: none;
+    
+display: none;
 }
 
 .popover-cart-title {
@@ -2224,7 +2254,7 @@ body {
     background-position: center;
     border: none;
     cursor: pointer;
-  }
+}
 
 .modal-title {
     margin: 0;
